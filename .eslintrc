@@ -1,5 +1,9 @@
 {
   "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "rules": {
     "semi": 0,
     "global-require": 0,

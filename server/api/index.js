@@ -16,6 +16,6 @@ const fetchApods = (callback) => {
 
 apiRouter.get('/apods', (req, res) => {
   fetchApods((json) => res.json(json))
-})s
+})
 
 module.exports = apiRouter
