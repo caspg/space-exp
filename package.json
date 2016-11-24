@@ -4,11 +4,19 @@
   "main": "index.js",
   "author": "Kacper Golinski",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./server"
+  },
   "dependencies": {
     "express": "^4.14.0",
+    "install": "^0.8.2",
     "isomorphic-fetch": "^2.2.1",
     "moment": "^2.17.0",
     "mongodb": "^2.2.11",
-    "mongoose": "^4.7.0"
+    "mongoose": "^4.7.0",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
