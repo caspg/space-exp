@@ -3,19 +3,19 @@ const fs = require('fs');
 
 const apiRouter = express.Router()
 
-const fetchApods = () => {
-  const apodsJson = fs.readFileSync('server/data/apods.json', (err) => {
+const fetchApods = (callback) => {
+  fs.readFile('server/data/apods.json', 'utf8', (err, data) => {
     if (err) throw err
     console.log('apods.json loaded')
-  })
 
-  return JSON.parse(apodsJson)
+    callback(
+      JSON.parse(data)
+    )
+  })
 }
 
 apiRouter.get('/apods', (req, res) => {
-  res.json(
-    fetchApods()
-  )
+  fetchApods((json) => res.json(json))
 })
 
 module.exports = apiRouter
