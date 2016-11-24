@@ -8,15 +8,27 @@
     "dev": "nodemon ./server"
   },
   "dependencies": {
+    "eslint-plugin-react": "^6.7.1",
     "express": "^4.14.0",
     "install": "^0.8.2",
     "isomorphic-fetch": "^2.2.1",
     "moment": "^2.17.0",
     "mongodb": "^2.2.11",
     "mongoose": "^4.7.0",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "webpack": "^1.13.3"
   },
   "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.8",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1",
     "nodemon": "^1.11.0"
   }
 }
