@@ -12,7 +12,6 @@
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.8",
     "babel-preset-airbnb": "^2.1.1",
-    "babel-preset-stage-2": "^6.18.0",
     "express": "^4.14.0",
     "install": "^0.8.2",
     "isomorphic-fetch": "^2.2.1",
@@ -28,6 +27,7 @@
   "devDependencies": {
     "eslint": "^3.10.2",
     "eslint-config-airbnb": "^13.0.0",
+    "eslint-loader": "^1.6.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.7.1",
