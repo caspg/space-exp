@@ -12,6 +12,7 @@ injectGlobal`
   html * {
     font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
     font-weight: 400;
+    line-height: 1.5em;
   }
 `
 /* eslint-enable */
