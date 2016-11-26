@@ -1,42 +1,41 @@
-const moment = require('moment');
-const mongoose = require('mongoose');
+const moment = require('moment')
+const mongoose = require('mongoose')
 
-const apodApi = require('./utils/ApodApi');
-const initializeDb = require('../db');
-const Apod = require('../db/apodSchema');
+const initializeDb = require('../db')
+const apodApi = require('./utils/ApodApi')
+const buildApod = require('./utils/buildApod')
 
-const APODS_COUNT_TO_FETCH = 20;
+const APODS_COUNT_TO_FETCH = 20
 
-initializeDb();
-let promises = [];
+initializeDb()
+const promises = []
 
 const fetchAndSaveData = (i) => {
-  const date = moment().subtract(i, 'days').format('YYYY-MM-DD');
+  const date = moment().subtract(i, 'days').format('YYYY-MM-DD')
 
   const handleFetchSuccess = (result) => {
     if (result.error || result.code === 500) {
-      console.log(result.error.message);
-      return null;
+      return null
     }
 
-    const apod = new Apod(result);
+    const apod = buildApod(result)
 
     return apod.save()
       .then(() => console.log('result saved! date: ', result.date))
-      .catch((err) => console.log('result exist! date: ', result.date));
-  };
+      .catch(() => console.log('result exist! date: ', result.date))
+  }
 
-  const fetchApod = () =>(
+  const fetchApod = () => (
     apodApi.fetchData(date).then(handleFetchSuccess)
-  );
+  )
 
-  promises.push(fetchApod());
+  promises.push(fetchApod())
 }
 
-for (let i = 0; i <= APODS_COUNT_TO_FETCH; i++) {
-  fetchAndSaveData(i);
+for (let i = 0; i <= APODS_COUNT_TO_FETCH; i += 1) {
+  fetchAndSaveData(i)
 }
 
 Promise.all(promises).then(() => {
   mongoose.disconnect()
-});
+})

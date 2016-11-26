@@ -10,7 +10,13 @@ class ApodApi {
 
   fetchData(date) {
     const withDate = `${this.uri}&date=${date}`;
-    return fetch(withDate).then(res => res.json())
+    return fetch(withDate).then((res) => {
+      if (res.status !== 200) {
+        console.log(JSON.stringify(res))
+      }
+
+      return res.json()
+    })
   }
 }
 
