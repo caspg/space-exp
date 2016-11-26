@@ -1,11 +1,31 @@
 [
   {
+    "copyright": "Babak Tafreshi",
+    "date": "2016-11-26",
+    "explanation": "On this November morning an old crescent Moon and morning star rise just before the Sun in a wide panoramic skyscape from Kenya's Amboseli National Park. Still below the limbs of an acacia tree and the eastern horizon, the Sun's position is easy to find though. It's marked at the left by the subtle convergence of light and shadow in the dawn sky. Known as crepuscular rays, the warm-colored rays of sunlight are outlined by shadows cast by unseen clouds near the horizon. Arcing above the profile of Mount Kilimanjaro, toward the right the rays of light and shadow converge at the western horizon. There known as anti-crepuscular rays, they indicate the point opposite the rising sun. The cloud shadows are very nearly parallel, but converge toward the distant horizons because of perspective.",
+    "hdurl": "http://apod.nasa.gov/apod/image/1611/Tafreshi_DSC8114Ps.jpg",
+    "media_type": "image",
+    "title": "East to West, Light and Shadow",
+    "url": "http://apod.nasa.gov/apod/image/1611/Tafreshi_DSC8114Ps.jpg",
+    "slug": "2016-11-26-east-to-west-light-and-shadow"
+  },
+  {
+    "date": "2016-11-25",
+    "explanation": "Get out your red/blue glasses and check out this stereo scene from Taurus-Littrow valley on the Moon! The color anaglyph features a detailed 3D view of Apollo 17's Lunar Rover in the foreground -- behind it lies the Lunar Module and distant lunar hills. Because the world was  going to be able to watch the Lunar Module's ascent stage liftoff via the rover's TV camera, this parking place was also known as the VIP Site. In December of 1972, Apollo 17 astronauts Eugene Cernan and Harrison Schmitt spent about 75 hours on the Moon, while colleague Ronald Evans orbited overhead. The crew returned with 110 kilograms of rock and soil samples, more than from any of the other lunar landing sites. Cernan and Schmitt are still the last to walk (or drive) on the Moon.",
+    "hdurl": "http://apod.nasa.gov/apod/image/1611/a17anaglyph_vanMeijgaarden_f.jpg",
+    "media_type": "image",
+    "title": "Apollo 17 VIP Site Anaglyph",
+    "url": "http://apod.nasa.gov/apod/image/1611/a17anaglyph_vanMeijgaarden_c800.jpg",
+    "slug": "2016-11-25-apollo-17-vip-site-anaglyph"
+  },
+  {
     "date": "2016-11-24",
     "explanation": "Scroll right and you can cruise along the icy rings of Saturn. This high resolution scan is a mosaic of images presented in natural color. The images were recorded in May 2007 over about 2.5 hours as the Cassini spacecraft passed above the unlit side of the rings. To help track your progress, major rings and gaps are labeled along with the distance from the center of the gas giant in kilometers. The alphabetical designation of Saturn's rings is historically based on their order of discovery; rings A and B are the bright rings separated by the Cassini division. In order of increasing distance from Saturn, the seven main rings run D,C,B,A,F,G,E. (Faint, outer rings G and E are not imaged here.) Four days from now, on November 29, Cassini will make a close flyby of Saturn's moon Titan and use the large moon's gravity to nudge the spacecraft into a series of 20 daring, elliptical, ring-grazing orbits. Diving through the ring plane just 11,000 kilometers outside the F ring (far right) Cassini's first ring-graze will be on December 4.",
     "hdurl": "http://apod.nasa.gov/apod/image/1611/PIA08389_fig1.jpg",
     "media_type": "image",
     "title": "Ring Scan",
-    "url": "http://apod.nasa.gov/apod/image/1611/PIA08389_fig1_h500.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/PIA08389_fig1_h500.jpg",
+    "slug": "2016-11-24-ring-scan"
   },
   {
     "copyright": "Sébastien Gozé",
@@ -14,7 +34,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/Bubble_Goze_1600.jpg",
     "media_type": "image",
     "title": "NGC 7635: Bubble in a Cosmic Sea",
-    "url": "http://apod.nasa.gov/apod/image/1611/Bubble_Goze_960.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/Bubble_Goze_960.jpg",
+    "slug": "2016-11-23-ngc-7635-bubble-in-a-cosmic-sea"
   },
   {
     "date": "2016-11-22",
@@ -22,7 +43,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/SputnikPlanum_NewHorizons_1180.jpg",
     "media_type": "image",
     "title": "Pluto's Sputnik Planum",
-    "url": "http://apod.nasa.gov/apod/image/1611/SputnikPlanum_NewHorizons_960.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/SputnikPlanum_NewHorizons_960.jpg",
+    "slug": "2016-11-22-plutos-sputnik-planum"
   },
   {
     "copyright": "Jeff Dai",
@@ -31,7 +53,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/NovaSag2016_Dai_1500_annotated.jpg",
     "media_type": "image",
     "title": "Nova over Thailand",
-    "url": "http://apod.nasa.gov/apod/image/1611/NovaSag2016_Dai_960_annotated.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/NovaSag2016_Dai_960_annotated.jpg",
+    "slug": "2016-11-21-nova-over-thailand"
   },
   {
     "date": "2016-11-20",
@@ -39,7 +62,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/ngc4414_HubbleSdss_2069.jpg",
     "media_type": "image",
     "title": "NGC 4414: A Flocculent Spiral Galaxy",
-    "url": "http://apod.nasa.gov/apod/image/1611/ngc4414_HubbleSdss_960.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/ngc4414_HubbleSdss_960.jpg",
+    "slug": "2016-11-20-ngc-4414-a-flocculent-spiral-galaxy"
   },
   {
     "copyright": "Chanctonbury\nObservatory",
@@ -48,7 +72,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/IC5070_Pelican_Nebula_Steve_Richards2048.jpg",
     "media_type": "image",
     "title": "IC 5070: A Dusty Pelican in the Swan",
-    "url": "http://apod.nasa.gov/apod/image/1611/IC5070_Pelican_Nebula_Steve_Richards1024.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/IC5070_Pelican_Nebula_Steve_Richards1024.jpg",
+    "slug": "2016-11-19-ic-5070-a-dusty-pelican-in-the-swan"
   },
   {
     "copyright": "Catching the Light",
@@ -57,7 +82,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/Supermoon_20161114lodriguss.jpg",
     "media_type": "image",
     "title": "Philadelphia Perigee Full Moon",
-    "url": "http://apod.nasa.gov/apod/image/1611/Supermoon_20161114_1024lodriguss.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/Supermoon_20161114_1024lodriguss.jpg",
+    "slug": "2016-11-18-philadelphia-perigee-full-moon"
   },
   {
     "date": "2016-11-17",
@@ -65,7 +91,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/nhq201611140001.jpg",
     "media_type": "image",
     "title": "Soyuz vs Supermoon",
-    "url": "http://apod.nasa.gov/apod/image/1611/nhq201611140001_900x1238.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/nhq201611140001_900x1238.jpg",
+    "slug": "2016-11-17-soyuz-vs-supermoon"
   },
   {
     "copyright": "David Lindemann",
@@ -74,7 +101,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/HeartSoul_Lindemann_1280.jpg",
     "media_type": "image",
     "title": "The Heart and Soul Nebulas",
-    "url": "http://apod.nasa.gov/apod/image/1611/HeartSoul_Lindemann_960.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/HeartSoul_Lindemann_960.jpg",
+    "slug": "2016-11-16-the-heart-and-soul-nebulas"
   },
   {
     "date": "2016-11-15",
@@ -82,7 +110,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/WarmTempsNA2_CCI_722.jpg",
     "media_type": "image",
     "title": "Cold Weather Delayed over North America",
-    "url": "http://apod.nasa.gov/apod/image/1611/WarmTempsNA2_CCI_960.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/WarmTempsNA2_CCI_960.jpg",
+    "slug": "2016-11-15-cold-weather-delayed-over-north-america"
   },
   {
     "copyright": "Kris Smith",
@@ -91,7 +120,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/ISStransit_Smith_3000.jpg",
     "media_type": "image",
     "title": "Supermoon and Space Station",
-    "url": "http://apod.nasa.gov/apod/image/1611/ISStransit_Smith_960.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/ISStransit_Smith_960.jpg",
+    "slug": "2016-11-14-supermoon-and-space-station"
   },
   {
     "copyright": "Juan Lozano de Haro",
@@ -100,7 +130,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/NGC891vsA347-2048CopyrightJuanLozano.jpg",
     "media_type": "image",
     "title": "NGC 891 vs Abell 347",
-    "url": "http://apod.nasa.gov/apod/image/1611/NGC891vsA347-1024CopyrightJuanLozano.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/NGC891vsA347-1024CopyrightJuanLozano.jpg",
+    "slug": "2016-11-12-ngc-891-vs-abell-347"
   },
   {
     "copyright": "Steve\nCannistra",
@@ -109,7 +140,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/ngc7822narrowbandlarger_cannistra.jpg",
     "media_type": "image",
     "title": "NGC 7822 in Cepheus",
-    "url": "http://apod.nasa.gov/apod/image/1611/ngc7822narrowbandlarger_cannistraC1024.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/ngc7822narrowbandlarger_cannistraC1024.jpg",
+    "slug": "2016-11-11-ngc-7822-in-cepheus"
   },
   {
     "copyright": "Rogelio Bernal\nAndreo",
@@ -118,7 +150,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/MW_ALL_2048x4038Vandreo.jpg",
     "media_type": "image",
     "title": "Great Rift Near the Center of the Milky Way",
-    "url": "http://apod.nasa.gov/apod/image/1611/MW_ALL_900x1775Vandreo.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/MW_ALL_900x1775Vandreo.jpg",
+    "slug": "2016-11-10-great-rift-near-the-center-of-the-milky-way"
   },
   {
     "date": "2016-11-09",
@@ -126,7 +159,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/M63_Hubble_1098.jpg",
     "media_type": "image",
     "title": "M63: The Sunflower Galaxy from Hubble",
-    "url": "http://apod.nasa.gov/apod/image/1611/M63_Hubble_960.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/M63_Hubble_960.jpg",
+    "slug": "2016-11-09-m63-the-sunflower-galaxy-from-hubble"
   },
   {
     "copyright": "Josep Drudis",
@@ -135,7 +169,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/Tarantula_Drudis_2430.jpg",
     "media_type": "image",
     "title": "The Cosmic Web of the Tarantula Nebula",
-    "url": "http://apod.nasa.gov/apod/image/1611/Tarantula_Drudis_960.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/Tarantula_Drudis_960.jpg",
+    "slug": "2016-11-08-the-cosmic-web-of-the-tarantula-nebula"
   },
   {
     "copyright": "Mark Hersch",
@@ -144,7 +179,8 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/ChicagoClouds_Hersch_3600.jpg",
     "media_type": "image",
     "title": "Inverted City Beneath Clouds",
-    "url": "http://apod.nasa.gov/apod/image/1611/ChicagoClouds_Hersch_960.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/ChicagoClouds_Hersch_960.jpg",
+    "slug": "2016-11-07-inverted-city-beneath-clouds"
   },
   {
     "date": "2016-11-06",
@@ -152,22 +188,7 @@
     "hdurl": "http://apod.nasa.gov/apod/image/1611/ngc3603_hubble_3885.jpg",
     "media_type": "image",
     "title": "Starburst Cluster in NGC 3603",
-    "url": "http://apod.nasa.gov/apod/image/1611/ngc3603_hubble_960.jpg"
-  },
-  {
-    "date": "2016-11-05",
-    "explanation": "Shot in Ultra HD, this stunning video can take you on a tour of the International Space Station. A fisheye lens with sharp focus and extreme depth of field provides an immersive visual experience of life in the orbital outpost. In the 18 minute fly-through, your point of view will float serenely while you watch our fair planet go by 400 kilometers below the seven-windowed Cupola, and explore the interior of the station's habitable nodes and modules from an astronaut's perspective. The modular International Space Station is Earth's largest artificial satellite, about the size of a football field in overall length and width. Its total pressurized volume is approximately equal to that of a Boeing 747 aircraft.",
-    "media_type": "video",
-    "title": "ISS Fisheye Fly-Through",
-    "url": "https://www.youtube.com/embed/DhmdyQdu96M?rel=0"
-  },
-  {
-    "copyright": "Ken Crawford",
-    "date": "2016-11-04",
-    "explanation": "Look through the cosmic cloud cataloged as NGC 281 and you might miss the stars of open cluster IC 1590. Still, formed within the nebula that cluster's young, massive stars ultimately power the pervasive nebular glow. The eye-catching shapes looming in this portrait of NGC 281 are sculpted columns and dense dust globules seen in silhouette, eroded by intense, energetic winds and radiation from the hot cluster stars. If they survive long enough, the dusty structures could also be sites of future star formation. Playfully called the Pacman Nebula because of its overall shape, NGC 281 is about 10,000 light-years away in the constellation Cassiopeia. This sharp composite image was made through narrow-band filters, combining emission from the nebula's hydrogen, sulfur, and oxygen atoms in green, red, and blue hues. It spans over 80 light-years at the estimated distance of NGC 281.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/PacmanCrawfordNew2048.jpg",
-    "media_type": "image",
-    "title": "Portrait of NGC 281",
-    "url": "http://apod.nasa.gov/apod/image/1611/PacmanCrawfordNew1024.jpg"
+    "url": "http://apod.nasa.gov/apod/image/1611/ngc3603_hubble_960.jpg",
+    "slug": "2016-11-06-starburst-cluster-in-ngc-3603"
   }
 ]
