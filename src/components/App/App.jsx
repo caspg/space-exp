@@ -1,19 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { PropTypes } from 'react'
 
 import Header from 'components/Header'
 
-const FakeContent = styled.div`
-  height: 900px;
-  color: white;
-`
-
-export default () => (
+const App = props => (
   <div>
     <Header />
 
-    <FakeContent>
-      .
-    </FakeContent>
+  <div>
+
+    {props.children}
+  </div>
   </div>
 )
+
+App.propTypes = {
+  children: PropTypes.element.isRequired,
+}
+
+export default App
