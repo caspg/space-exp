@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react'
 import styled from 'styled-components'
 
 import colors from 'styles/constants/colors'
+import truncate from 'utils/truncate'
 
 const CardContainer = styled.div`
   border-radius: 5px;
@@ -48,7 +49,7 @@ const Card = props => (
         {props.apod.title}
       </Title>
       <Explanation>
-        {props.apod.explanation}
+        {truncate(props.apod.explanation, 250)}
       </Explanation>
     </DetailsDiv>
   </CardContainer>
