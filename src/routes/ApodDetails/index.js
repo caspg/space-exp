@@ -1,3 +1,5 @@
+import ensure from 'utils/polyfills/ensure'
+
 const handleOnEnter = (nextState) => {
   const { location } = nextState
   if (location.action === 'PUSH' && location.pathname !== '/') {
@@ -9,7 +11,7 @@ export default () => ({
   path: '/:apodId',
   onEnter: handleOnEnter,
   getComponent: (nextState, cb) => {
-    require.ensure([], (require) => {
+    ensure([], (require) => {
       const ApodDetailsContainer = require('./containers/ApodDetailsContainer').default
 
       cb(null, ApodDetailsContainer)
