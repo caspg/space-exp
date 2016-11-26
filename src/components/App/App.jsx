@@ -5,11 +5,7 @@ import Header from 'components/Header'
 const App = props => (
   <div>
     <Header />
-
-  <div>
-
     {props.children}
-  </div>
   </div>
 )
 

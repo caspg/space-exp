@@ -1,13 +1,14 @@
 import React, { PropTypes } from 'react'
 import styled from 'styled-components'
 
+import colors from 'styles/constants/colors'
+
 const CardContainer = styled.div`
-  border: 1px solid white;
   border-radius: 5px;
   overflow: hidden;
 
   display: block;
-  width: 50%;
+  width: 80%;
   max-width: 600px;
   margin: 0 auto;
   margin-top: 70px;
@@ -20,8 +21,9 @@ const Img = styled.img`
 
 const DetailsDiv = styled.div`
   margin: 0;
+  margin-top: -5px;
   padding: 10px 20px;
-  background-color: white;
+  background-color: ${colors.grey200};
   text-align: left;
 `
 

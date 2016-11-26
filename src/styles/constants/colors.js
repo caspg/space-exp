@@ -1,3 +1,5 @@
 export default {
-  black: '#212121',
+  black: '#000',
+
+  grey200: '#EEEEEE',
 }
