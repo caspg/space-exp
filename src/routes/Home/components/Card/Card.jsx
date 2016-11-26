@@ -30,10 +30,14 @@ const DetailsDiv = styled.div`
 const Title = styled.h2`
   font-size: 1.3em;
   font-weight: 900;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid ${colors.grey300};
 `
 
 const Explanation = styled.p`
   font-weight: 300;
+  text-align: justify;
 `
 
 const Card = props => (
