@@ -16,7 +16,6 @@ const renderRoute = (res, renderProps) => {
     createElement(RouterContext, renderProps) // eslint-disable-line comma-dangle
   )
 
-
   res.send(renderHtml({ content, styles }))
 }
 
