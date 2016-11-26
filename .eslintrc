@@ -1,5 +1,11 @@
 {
   "extends": "airbnb",
+  "plugins": ["import"],
+  "settings": {
+    "import/resolver": {
+      "webpack": { config: './config/webpack/config.js' }
+    }
+  },
   "env": {
     "browser": true,
     "node": true
