@@ -1,7 +1,7 @@
-import ensure from 'utils/polyfills/ensure'
+if (typeof require.ensure !== 'function') require.ensure = (d, c) => { c(require) }
 
 export default (partialNextState, callback) => {
-  ensure([], (require) => {
+  require.ensure([], (require) => {
     callback(null, {
       component: require('./components/FeedView').default,
     })
