@@ -6,6 +6,7 @@ import colors from './constants/colors'
 injectGlobal`
   body {
     background-color: ${colors.black};
+    padding-bottom: 100px;
   }
 
   html * {

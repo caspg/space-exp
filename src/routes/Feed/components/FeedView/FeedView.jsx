@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 
 import CardSLayout from '../CardSLayout'
 
-const HomeView = (props) => {
+const FeedView = (props) => {
   const { apods } = props
 
   if (apods.length === 0) {
@@ -14,8 +14,8 @@ const HomeView = (props) => {
   )
 }
 
-HomeView.propTypes = {
+FeedView.propTypes = {
   apods: PropTypes.arrayOf(PropTypes.object),
 }
 
-export default HomeView
+export default FeedView

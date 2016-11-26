@@ -1,9 +1,9 @@
 import App from 'components/App'
 
-import homeRoute from './Home'
+import feedRoute from './Feed'
 
 export default {
   path: '/',
   component: App,
-  getIndexRoute: homeRoute,
+  getIndexRoute: feedRoute,
 }

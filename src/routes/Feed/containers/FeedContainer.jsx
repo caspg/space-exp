@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import fetch from 'isomorphic-fetch'
 
-import HomeView from '../components/HomeView'
+import FeedView from '../components/FeedView'
 
-class HomeContainer extends Component {
+class FeedContainer extends Component {
   static fetchData() {
     return fetch('http://localhost:3000/api/apods')
       .then(res => res.json())
@@ -17,16 +17,16 @@ class HomeContainer extends Component {
   }
 
   componentDidMount() {
-    HomeContainer.fetchData().then((apods) => {
+    FeedContainer.fetchData().then((apods) => {
       this.setState({ apods })
     })
   }
 
   render() {
     return (
-      <HomeView apods={this.state.apods} />
+      <FeedView apods={this.state.apods} />
     )
   }
 }
 
-export default HomeContainer
+export default FeedContainer
