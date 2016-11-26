@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router'
 
 import colors from 'styles/constants/colors'
 import truncate from 'utils/truncate'
@@ -22,7 +23,7 @@ const Img = styled.img`
 
 const DetailsDiv = styled.div`
   margin: 0;
-  margin-top: -5px;
+  margin-top: -10px;
   padding: 10px 20px;
   background-color: ${colors.grey200};
   text-align: left;
@@ -34,6 +35,7 @@ const Title = styled.h2`
   margin-bottom: 1em;
   padding-bottom: 1em;
   border-bottom: 1px solid ${colors.grey300};
+  text-decoration: none !important;
 `
 
 const Explanation = styled.p`
@@ -41,22 +43,38 @@ const Explanation = styled.p`
   text-align: justify;
 `
 
+const StyledLink = styled(Link)`
+  color: ${colors.black};
+  text-decoration: none;
+
+  &:hover {
+    color: ${colors.black};
+  }
+
+  &:visited {
+    color: ${colors.black};
+  }
+`
+
 const Card = props => (
   <CardContainer>
-    <Img src={props.apod.url} />
-    <DetailsDiv>
-      <Title>
-        {props.apod.title}
-      </Title>
-      <Explanation>
-        {truncate(props.apod.explanation, 250)}
-      </Explanation>
-    </DetailsDiv>
+    <StyledLink to={`/${props.apod.slug}`}>
+      <Img src={props.apod.url} />
+      <DetailsDiv>
+        <Title>
+          {props.apod.title}
+        </Title>
+        <Explanation>
+          {truncate(props.apod.explanation, 250)}
+        </Explanation>
+      </DetailsDiv>
+    </StyledLink>
   </CardContainer>
 )
 
 Card.propTypes = {
   apod: PropTypes.shape({
+    slug: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     explanation: PropTypes.string.isRequired,

@@ -5,7 +5,6 @@ import colors from 'styles/constants/colors'
 import ApodDetails from '../ApodDetails'
 
 const DetailsContainer = styled.div`
-  max-height: 600px;
   text-align: center;
   margin: 0 -5px;
   margin-top: 100px;

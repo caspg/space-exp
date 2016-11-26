@@ -7,9 +7,13 @@ const CardsContainer = styled.div`
   text-align: center;
 `
 
+const renderCards = apods => (
+  apods.map((apod, i) => <Card key={i} apod={apod} />)
+)
+
 const CardSLayout = props => (
   <CardsContainer>
-    {props.apods.map((apod, i) => <Card key={i} apod={apod} />)}
+    {renderCards(props.apods)}
   </CardsContainer>
 )
 
