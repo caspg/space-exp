@@ -22,19 +22,23 @@ const Image = styled.img`
   max-height:100%;
 `
 
-const ApodDetailsView = (props) => {
-  return (
-    <DetailsContainer>
-      <Wrapper>
-        <Image src={props.apod.url} />
-        <ApodDetails apod={props.apod} />
-      </Wrapper>
-    </DetailsContainer>
-  )
-}
+const ApodDetailsView = props => (
+  <DetailsContainer>
+    <Wrapper>
+      <Image src={props.apod.url} />
+      <ApodDetails apod={props.apod} />
+    </Wrapper>
+  </DetailsContainer>
+)
 
 ApodDetailsView.propTypes = {
-
+  apod: PropTypes.shape({
+    url: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    copyright: PropTypes.string.isRequired,
+    explanation: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+  }),
 }
 
 export default ApodDetailsView

@@ -1,4 +1,4 @@
-import React, { Component, cloneElement } from 'react'
+import React, { Component, cloneElement, PropTypes } from 'react'
 import fetch from 'isomorphic-fetch'
 
 import Header from 'components/Header'
@@ -27,7 +27,7 @@ class AppContainer extends Component {
       this.props.children,
       {
         apods: this.state.apods,
-      }
+      },
     )
 
     return (
@@ -37,6 +37,10 @@ class AppContainer extends Component {
       </div>
     )
   }
+}
+
+AppContainer.propTypes = {
+  children: PropTypes.element.isRequired,
 }
 
 export default AppContainer
