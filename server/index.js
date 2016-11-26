@@ -1,6 +1,5 @@
 const express = require('express')
 const morgan = require('morgan')
-const path = require('path')
 
 const apiRouter = require('./api')
 
@@ -8,6 +7,9 @@ const PORT = 3000;
 const app = express()
 
 app.use(morgan('dev'))
+app.set('views', './server/views')
+app.set('view engine', 'ejs')
+
 app.use('/api', apiRouter)
 
 if (process.env.NODE_ENV !== 'production') {
@@ -27,7 +29,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, '../public', 'index.html'))
+  res.render('index')
 })
 
 app.listen(PORT, '0.0.0.0', (err) => {
