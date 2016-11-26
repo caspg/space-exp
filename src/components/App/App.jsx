@@ -1,14 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
+import Header from 'components/Header'
+
+const FakeContent = styled.div`
+  height: 900px;
+  color: white;
 `
 
 export default () => (
-  <Title>
-    Hello, World! YAY
-  </Title>
+  <div>
+    <Header />
+
+    <FakeContent>
+      .
+    </FakeContent>
+  </div>
 )
