@@ -5,7 +5,6 @@ import colors from 'styles/constants/colors'
 
 const DetailsDiv = styled.div`
   margin: 0 auto;
-  margin-top: 50px;
   padding: 20px 40px;
   background-color: ${colors.grey200};
   text-align: left;
@@ -13,6 +12,7 @@ const DetailsDiv = styled.div`
   max-width: 700px;
   margin-bottom: 50px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 5px;
 `
 
 const Header = styled.div`

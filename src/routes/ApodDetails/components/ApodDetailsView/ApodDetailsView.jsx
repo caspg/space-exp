@@ -13,7 +13,6 @@ const DetailsContainer = styled.div`
 
 const Wrapper = styled.div`
   display: inline-block;
-  background-color: ${colors.grey300};;
 `
 
 const Image = styled.img`
@@ -21,11 +20,20 @@ const Image = styled.img`
   max-height:100%;
 `
 
+const DetailsWrapper = styled.div`
+  background-color: ${colors.grey300};
+  padding-top: 80px;
+  padding-bottom: 50px;
+  margin-top: -10px;
+`
+
 const ApodDetailsView = props => (
   <DetailsContainer>
     <Wrapper>
       <Image src={props.apod.url} />
-      <ApodDetails apod={props.apod} />
+      <DetailsWrapper>
+        <ApodDetails apod={props.apod} />
+      </DetailsWrapper>
     </Wrapper>
   </DetailsContainer>
 )
