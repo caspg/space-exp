@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react'
 
+import Card from '../Card'
+
 const HomeView = (props) => {
   const { apods } = props
 
@@ -9,7 +11,7 @@ const HomeView = (props) => {
 
   return (
     <div>
-      {apods.map((apod, i) => <div key={i}>{apod.title}</div>)}
+      {apods.map((apod, i) => <Card key={i} apod={apod} />)}
     </div>
   )
 }
