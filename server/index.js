@@ -1,7 +1,7 @@
 const app = require('./config')
 const apiRouter = require('./api')
 
-const serverSideRender = require('./serverSideRender')
+const serverSideRender = require('./utils/serverSideRender')
 
 const PORT = 3000;
 

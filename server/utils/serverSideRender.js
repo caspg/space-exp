@@ -5,7 +5,8 @@ const reactRouter = require('react-router')
 const renderToString = require('react-dom/server').renderToString
 const styleSheet = require('styled-components/lib/models/StyleSheet')
 
-const routes = require('../src/routes').default
+const routes = require('../../src/routes').default
+const renderHtml = require('./renderHtml')
 
 const { match, RouterContext } = reactRouter
 
@@ -16,7 +17,7 @@ const renderRoute = (res, renderProps) => {
   )
 
 
-  res.render('index', { content, styles })
+  res.send(renderHtml({ content, styles }))
 }
 
 const serverSideRender = (req, res) => (
