@@ -7,7 +7,7 @@ export const DetailsDiv = styled.div`
   padding: 20px 40px;
   background-color: ${colors.grey200};
   text-align: left;
-  width: 100%;
+  width: 80%;
   max-width: 700px;
   margin-bottom: 50px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);

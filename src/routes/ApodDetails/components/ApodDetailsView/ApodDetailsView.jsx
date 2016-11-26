@@ -5,6 +5,7 @@ import {
   DetailsContainer,
   Wrapper,
   DetailsWrapper,
+  Image,
 } from './StyledComponents'
 
 const ApodDetailsView = props => (
