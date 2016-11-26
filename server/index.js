@@ -1,37 +1,17 @@
-const express = require('express')
-const morgan = require('morgan')
-
+const app = require('./config')
 const apiRouter = require('./api')
 
-const PORT = 3000;
-const app = express()
+const serverSideRender = require('./serverSideRender')
 
-app.use(morgan('dev'))
-app.set('views', './server/views')
-app.set('view engine', 'ejs')
+const PORT = 3000;
 
 app.use('/api', apiRouter)
 
-if (process.env.NODE_ENV !== 'production') {
-  const webpackDevMiddleware = require('webpack-dev-middleware')
-  const webpackConfig = require('../config/webpack/config.js')
-  const webpack = require('webpack')
-  const compiler = webpack(webpackConfig)
-
-  app.use(webpackDevMiddleware(compiler, {
-    hot: true,
-    publicPath: '/bundles/',
-    stats: {
-      colors: true,
-    },
-    historyApiFallback: true,
-  }))
-}
-
 app.use((req, res) => {
-  res.render('index')
+  serverSideRender(req, res)
 })
 
+/* eslint-disable no-console */
 app.listen(PORT, '0.0.0.0', (err) => {
   if (err) { console.log(err) }
   console.info('==> 🌎  Listening on port %s.', PORT)
