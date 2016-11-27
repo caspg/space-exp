@@ -45,7 +45,7 @@ class ApodDetailsContainer extends Component {
 
 
 ApodDetailsContainer.propTypes = {
-  data: PropTypes.shape({
+  data: PropTypes.shape({ // eslint-disable-line react/no-unused-prop-types
     apodDetails: PropTypes.object,
   }),
   params: PropTypes.shape({
