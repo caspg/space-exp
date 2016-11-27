@@ -1,12 +1,11 @@
 import React, { Component, PropTypes } from 'react'
-import fetch from 'isomorphic-fetch'
 
+import { fetchApods } from 'utils/api'
 import FeedView from '../components/FeedView'
 
 class FeedContainer extends Component {
   static fetchData() {
-    return fetch('http://localhost:3000/api/apods')
-      .then(res => res.json())
+    return fetchApods()
   }
 
   constructor(props) {

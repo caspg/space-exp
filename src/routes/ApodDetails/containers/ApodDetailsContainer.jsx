@@ -1,12 +1,11 @@
 import React, { Component, PropTypes } from 'react'
-import fetch from 'isomorphic-fetch'
 
+import { fetchApodDetails } from 'utils/api'
 import ApodDetails from '../components/ApodDetailsView'
 
 class ApodDetailsContainer extends Component {
   static fetchData(slug) {
-    return fetch(`http://localhost:3000/api/apods/${slug}`)
-      .then(res => res.json())
+    return fetchApodDetails(slug)
   }
 
   static handleInitialData({ data, params }) {
