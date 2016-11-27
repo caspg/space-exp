@@ -17,9 +17,11 @@ class AppContainer extends Component {
   }
 
   componentDidMount() {
-    AppContainer.fetchData().then((apods) => {
-      this.setState({ apods })
-    })
+    if (!this.props.apods) {
+      AppContainer.fetchData().then((apods) => {
+        this.setState({ apods })
+      })
+    }
   }
 
   render() {

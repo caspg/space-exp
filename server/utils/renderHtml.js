@@ -17,9 +17,7 @@ module.exports = ({ content, styles }) => `
     </style>
   </head>
   <body>
-    <div id="app">
-      ${content}
-    </div>
+    <div id="app"><div>${content}</div></div>
 
     <script type="text/javascript" src="/bundles/app.bundle.js"></script>
   </body>
