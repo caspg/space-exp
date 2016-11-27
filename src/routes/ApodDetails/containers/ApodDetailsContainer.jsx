@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import fetch from 'isomorphic-fetch'
 
 import ApodDetails from '../components/ApodDetailsView'
 
@@ -6,7 +7,7 @@ import ApodDetails from '../components/ApodDetailsView'
   // apods.filter(apod => apod.slug === apodId)[0]
 // )
 
-class ApodDetailsView extends Component {
+class ApodDetailsContainer extends Component {
   static fetchData(slug) {
     return fetch(`http://localhost:3000/api/apods/${slug}`)
       .then(res => res.json())
@@ -15,29 +16,28 @@ class ApodDetailsView extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      apod: null,
+      apod: props.data || null,
     }
   }
 
   componentDidMount() {
     const { slug } = this.props.params
-    ApodDetailsView.fetchData(slug).then((apod) => {
+    ApodDetailsContainer.fetchData(slug).then((apod) => {
       this.setState({ apod })
     })
   }
 
   render() {
     const { apod } = this.state
-    const shouldRender = apod && apod.length !== 0
-    return shouldRender ? <ApodDetails apod={apod} /> : null
+    return apod ? <ApodDetails apod={apod} /> : null
   }
 }
 
 
-ApodDetailsView.propTypes = {
+ApodDetailsContainer.propTypes = {
   params: PropTypes.shape({
     slug: PropTypes.string.isRequired,
   }),
 }
 
-export default ApodDetailsView
+export default ApodDetailsContainer

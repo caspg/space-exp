@@ -2,16 +2,25 @@ require('babel-register')
 
 const app = require('./config')
 const apiRouter = require('./api')
-
-const serverSideRender = require('./utils/serverSideRender')
+const renderFeed = require('./utils/serverSideRender/feed')
+const renderApodDetails = require('./utils/serverSideRender/apodDetails')
 
 const PORT = 3000;
 
 app.use('/api', apiRouter)
 
-app.get('*', (req, res) => {
-  serverSideRender(req, res)
+app.get('/', (req, res) => {
+  renderFeed(req, res)
 })
+
+app.get('/:slug', (req, res) => {
+  renderApodDetails(req, res)
+})
+
+// app.get('*', (req, res) => {
+// as a fallback we should match route and send shell app
+  // res.send(renderHtml({}))
+// })
 
 /* eslint-disable no-console */
 app.listen(PORT, '0.0.0.0', (err) => {
