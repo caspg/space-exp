@@ -9,13 +9,21 @@ const fetchApods = (callback) => {
     console.log('apods.json loaded')
 
     callback(
-      JSON.parse(data)
+      JSON.parse(data),
     )
   })
 }
 
 apiRouter.get('/apods', (req, res) => {
-  fetchApods((json) => res.json(json))
+  fetchApods(json => res.json(json))
+})
+
+apiRouter.get('/apods/:slug', (req, res) => {
+  const { slug } = req.params
+  fetchApods((json) => {
+    const apod = json.filter(i => i.slug === slug)
+    res.json(apod)
+  })
 })
 
 module.exports = apiRouter
