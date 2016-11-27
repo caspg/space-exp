@@ -13,5 +13,6 @@
   "rules": {
     "semi": 0,
     "global-require": 0,
+    "react/forbid-prop-types": 0,
     }
 }

@@ -21,10 +21,12 @@ class ApodDetailsContainer extends Component {
   }
 
   componentDidMount() {
-    const { slug } = this.props.params
-    ApodDetailsContainer.fetchData(slug).then((apod) => {
-      this.setState({ apod })
-    })
+    if (!this.state.apod) {
+      const { slug } = this.props.params
+      ApodDetailsContainer.fetchData(slug).then((apod) => {
+        this.setState({ apod })
+      })
+    }
   }
 
   render() {
@@ -35,6 +37,7 @@ class ApodDetailsContainer extends Component {
 
 
 ApodDetailsContainer.propTypes = {
+  data: PropTypes.object,
   params: PropTypes.shape({
     slug: PropTypes.string.isRequired,
   }),
