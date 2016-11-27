@@ -22,7 +22,11 @@ apiRouter.get('/apods/:slug', (req, res) => {
   const { slug } = req.params
   fetchApods((json) => {
     const apod = json.filter(i => i.slug === slug)[0]
-    res.json(apod)
+    if (apod) {
+      res.json(apod)
+    } else {
+      res.status(404).json({ status: 404, message: 'Not found' })
+    }
   })
 })
 

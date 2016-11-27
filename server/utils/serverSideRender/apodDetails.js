@@ -6,7 +6,11 @@ const renderApodDetails = (req, res) => {
   matchRoute(req, res, (renderProps) => {
     const { slug } = req.params
     ApodDetailsContainer.fetchData(slug).then((data) => {
-      sendHtmlString(res, renderProps, { apodDetails: data })
+      if (data.status === 200) {
+        sendHtmlString(res, renderProps, { apodDetails: data })
+      } else {
+        res.status(404).send('Not Found')
+      }
     })
   })
 }
