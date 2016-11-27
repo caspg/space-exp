@@ -14,8 +14,9 @@ module.exports = {
   module: {
     loaders: [
       {
+        key: 'jsx',
         test: /.jsx?$/,
-        loaders: ['babel-loader', 'eslint-loader'],
+        loaders: ['babel-loader'],
         exclude: /node_modules/,
       },
     ],
@@ -27,4 +28,5 @@ module.exports = {
       react: path.resolve(__dirname, '../../node_modules', 'react'),
     },
   },
+  plugins: [],
 }

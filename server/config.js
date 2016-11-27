@@ -13,7 +13,7 @@ app.use(express.static(publicPath));
 
 if (process.env.NODE_ENV !== 'production') {
   const webpackDevMiddleware = require('webpack-dev-middleware')
-  const webpackConfig = require('../config/webpack/config.js')
+  const webpackConfig = require('../config/webpack/config.dev.js')
   const webpack = require('webpack')
   const compiler = webpack(webpackConfig)
 

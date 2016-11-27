@@ -5,7 +5,8 @@
   "author": "Kacper Golinski",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./server"
+    "dev": "nodemon ./server",
+    "build": "NODE_ENV=production webpack -p --config config/webpack/config.prod.js"
   },
   "dependencies": {
     "babel-core": "^6.18.2",
