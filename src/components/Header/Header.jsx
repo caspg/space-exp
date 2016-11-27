@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import constants from 'styles/constants'
 
 const HeaderContent = styled.header`
-  background-color: red;
+  background-color: white;
   opacity: 0.95;
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.8);
   height: ${constants.headerHeight};

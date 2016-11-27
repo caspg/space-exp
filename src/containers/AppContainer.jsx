@@ -12,7 +12,7 @@ class AppContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      apods: [],
+      apods: props.apods || [],
     }
   }
 
@@ -41,6 +41,7 @@ class AppContainer extends Component {
 
 AppContainer.propTypes = {
   children: PropTypes.element.isRequired,
+  apods: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default AppContainer

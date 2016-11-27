@@ -1,22 +1,30 @@
-require('babel-register')
-
-const createElement = require('react').createElement
+const React = require('react')
 const reactRouter = require('react-router')
 const renderToString = require('react-dom/server').renderToString
 const styleSheet = require('styled-components/lib/models/StyleSheet')
 
 const routes = require('../../src/routes').default
 const renderHtml = require('./renderHtml')
+const AppContainer = require('../../src/containers/AppContainer').default
 
 const { match, RouterContext } = reactRouter
 
 const renderRoute = (res, renderProps) => {
   const styles = styleSheet.rules().map(rule => rule.cssText).join('\n')
-  const content = renderToString(
-    createElement(RouterContext, renderProps) // eslint-disable-line comma-dangle
-  )
 
-  res.send(renderHtml({ content, styles }))
+  AppContainer.fetchData().then((apods) => {
+    const handleCreateElement = (Component, props) => (
+       React.createElement(Component, { ...props, apods })
+     )
+    const content = renderToString(
+      React.createElement(
+        RouterContext,
+        { ...renderProps, createElement: handleCreateElement },
+      ),
+    )
+
+    res.send(renderHtml({ content, styles }))
+  })
 }
 
 const serverSideRender = (req, res) => (

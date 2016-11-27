@@ -1,3 +1,5 @@
+require('babel-register')
+
 const app = require('./config')
 const apiRouter = require('./api')
 
