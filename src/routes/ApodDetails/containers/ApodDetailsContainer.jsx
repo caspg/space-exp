@@ -25,7 +25,7 @@ class ApodDetailsContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      apod: props.data.apodDetails,
+      apod: ApodDetailsContainer.handleInitialData(props),
     }
   }
 
