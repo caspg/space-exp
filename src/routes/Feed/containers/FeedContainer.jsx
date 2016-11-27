@@ -13,7 +13,7 @@ class FeedContainer extends Component {
     super(props)
 
     this.state = {
-      apods: props.data || [],
+      apods: props.data.apods || [],
     }
   }
 
@@ -31,7 +31,9 @@ class FeedContainer extends Component {
 }
 
 FeedContainer.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object),
+  data: PropTypes.shape({
+    apods: PropTypes.arrayOf(PropTypes.object).isRequired,
+  }),
 }
 
 export default FeedContainer

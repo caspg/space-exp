@@ -20,8 +20,8 @@ module.exports = ({ content, styles, bootData }) => `
     <div id="app">${content}</div>
     <div id="dupa"></div>
 
-    <script type=”application/json” id="boot-data">
-     ${bootData}
+    <script>
+     window.BOOT_DATA = ${bootData};
     </script>
     <script type="text/javascript" src="/bundles/app.bundle.js"></script>
   </body>

@@ -6,7 +6,7 @@ const renderApodDetails = (req, res) => {
   matchRoute(req, res, (renderProps) => {
     const { slug } = req.params
     ApodDetailsContainer.fetchData(slug).then((data) => {
-      sendHtmlString(res, renderProps, data)
+      sendHtmlString(res, renderProps, { apodDetails: data })
     })
   })
 }

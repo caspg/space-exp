@@ -3,10 +3,6 @@ import fetch from 'isomorphic-fetch'
 
 import ApodDetails from '../components/ApodDetailsView'
 
-// const findApod = (apods, apodId) => (
-  // apods.filter(apod => apod.slug === apodId)[0]
-// )
-
 class ApodDetailsContainer extends Component {
   static fetchData(slug) {
     return fetch(`http://localhost:3000/api/apods/${slug}`)
@@ -16,7 +12,7 @@ class ApodDetailsContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      apod: props.data || null,
+      apod: props.data.apodDetails,
     }
   }
 
@@ -37,7 +33,9 @@ class ApodDetailsContainer extends Component {
 
 
 ApodDetailsContainer.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.shape({
+    apodDetails: PropTypes.object,
+  }),
   params: PropTypes.shape({
     slug: PropTypes.string.isRequired,
   }),

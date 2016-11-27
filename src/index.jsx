@@ -6,10 +6,7 @@ import routes from './routes'
 
 const handleCreateElement = (Component, props) => {
   if (Component.fetchData) {
-    const bootDataJSON = document.getElementById('boot-data').textContent
-    const bootData = (bootDataJSON !== '') ? JSON.parse(bootDataJSON) : null
-
-    return <Component data={bootData} {...props} />
+    return <Component data={window.BOOT_DATA} {...props} />
   }
 
   return <Component {...props} />

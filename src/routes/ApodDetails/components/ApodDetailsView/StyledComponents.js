@@ -5,7 +5,6 @@ import colors from 'styles/constants/colors'
 export const DetailsContainer = styled.div`
   text-align: center;
   margin: 0 -5px;
-  margin-top: 100px;
   margin-bottom: 100px;
 `
 
