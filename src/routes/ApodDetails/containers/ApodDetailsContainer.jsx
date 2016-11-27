@@ -1,23 +1,42 @@
-import React, { PropTypes } from 'react'
+import React, { Component, PropTypes } from 'react'
 
 import ApodDetails from '../components/ApodDetailsView'
 
-const findApod = (apods, apodId) => (
-  apods.filter(apod => apod.slug === apodId)[0]
-)
+// const findApod = (apods, apodId) => (
+  // apods.filter(apod => apod.slug === apodId)[0]
+// )
 
-const ApodDetailsView = (props) => {
-  const { apods, params } = props
-  const apod = findApod(apods, params.apodId)
-  const shouldRender = apod && apod.length !== 0
+class ApodDetailsView extends Component {
+  static fetchData(slug) {
+    return fetch(`http://localhost:3000/api/apods/${slug}`)
+      .then(res => res.json())
+  }
 
-  return shouldRender ? <ApodDetails apod={apod} /> : null
+  constructor(props) {
+    super(props)
+    this.state = {
+      apod: null,
+    }
+  }
+
+  componentDidMount() {
+    const { slug } = this.props.params
+    ApodDetailsView.fetchData(slug).then((apod) => {
+      this.setState({ apod })
+    })
+  }
+
+  render() {
+    const { apod } = this.state
+    const shouldRender = apod && apod.length !== 0
+    return shouldRender ? <ApodDetails apod={apod} /> : null
+  }
 }
 
+
 ApodDetailsView.propTypes = {
-  apods: PropTypes.arrayOf(PropTypes.object),
   params: PropTypes.shape({
-    apodId: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
   }),
 }
 

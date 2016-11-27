@@ -8,7 +8,7 @@ const handleOnEnter = (nextState) => {
 }
 
 export default () => ({
-  path: '/:apodId',
+  path: '/:slug',
   onEnter: handleOnEnter,
   getComponent: (nextState, cb) => {
     require.ensure([], (require) => {

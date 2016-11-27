@@ -21,7 +21,7 @@ apiRouter.get('/apods', (req, res) => {
 apiRouter.get('/apods/:slug', (req, res) => {
   const { slug } = req.params
   fetchApods((json) => {
-    const apod = json.filter(i => i.slug === slug)
+    const apod = json.filter(i => i.slug === slug)[0]
     res.json(apod)
   })
 })
