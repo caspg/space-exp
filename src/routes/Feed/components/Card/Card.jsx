@@ -15,7 +15,7 @@ import {
 const Card = props => (
   <CardContainer>
     <StyledLink to={`/${props.apod.slug}`}>
-      <Image src={props.apod.url} />
+      <Image src={`/thumbs/${props.apod.slug}.jpg`} />
       <DetailsDiv>
         <Title>
           {props.apod.title}
