@@ -5,7 +5,7 @@ import CardSLayout from '../CardSLayout'
 const FeedView = (props) => {
   const { apods } = props
 
-  if (apods.length === 0) {
+  if (!apods || apods.length === 0) {
     return null
   }
 

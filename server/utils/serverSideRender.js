@@ -5,27 +5,38 @@ const styleSheet = require('styled-components/lib/models/StyleSheet')
 
 const routes = require('../../src/routes').default
 const renderHtml = require('./renderHtml')
-const AppContainer = require('../../src/containers/AppContainer').default
 
 const { match, RouterContext } = reactRouter
 
+const getFetchDataFunc = renderProps =>
+  renderProps.routes.reduce((result, { component }) => (
+    (component.fetchData) ? component.fetchData : result
+  ), null)
+
 const renderRoute = (res, renderProps) => {
   const styles = styleSheet.rules().map(rule => rule.cssText).join('\n')
+  const fetchData = getFetchDataFunc(renderProps)
 
-  AppContainer.fetchData().then((apods) => {
-    const handleCreateElement = (Component, props) => (
-       React.createElement(Component, { ...props, apods })
-     )
-    const stringApods = JSON.stringify(apods)
-    const content = renderToString(
-      React.createElement(
-        RouterContext,
-        { ...renderProps, createElement: handleCreateElement },
-      ),
-    )
+  if (fetchData) {
+    fetchData().then((data) => {
+      const handleCreateElement = (Component, props) =>
+        React.createElement(Component, { ...props, data })
 
-    res.send(renderHtml({ content, styles, apods: stringApods }))
-  })
+      const content = renderToString(
+        React.createElement(
+          RouterContext,
+          { ...renderProps, createElement: handleCreateElement },
+        ),
+      )
+
+      const bootData = JSON.stringify(data)
+
+      res.send(renderHtml({ content, styles, bootData }))
+    })
+  } else {
+    const content = renderToString(RouterContext, { ...renderProps })
+    res.send(renderHtml({ content, styles, bootData: null }))
+  }
 }
 
 const serverSideRender = (req, res) => (

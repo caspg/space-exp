@@ -1,6 +1,6 @@
 const globalStyle = require('styles/global').default
 
-module.exports = ({ content, styles, apods }) => `
+module.exports = ({ content, styles, bootData }) => `
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -18,9 +18,10 @@ module.exports = ({ content, styles, apods }) => `
   </head>
   <body>
     <div id="app">${content}</div>
+    <div id="dupa"></div>
 
     <script type=”application/json” id="boot-data">
-     ${apods}
+     ${bootData}
     </script>
     <script type="text/javascript" src="/bundles/app.bundle.js"></script>
   </body>
