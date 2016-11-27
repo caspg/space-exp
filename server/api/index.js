@@ -25,7 +25,7 @@ apiRouter.get('/apods/:slug', (req, res) => {
     if (apod) {
       res.json(apod)
     } else {
-      res.status(404).json({ status: 404, message: 'Not found' })
+      res.status(404).json({})
     }
   })
 })
