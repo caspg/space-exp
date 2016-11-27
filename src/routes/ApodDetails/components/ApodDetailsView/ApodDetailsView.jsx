@@ -11,6 +11,7 @@ import {
 const ApodDetailsView = props => (
   <DetailsContainer>
     <Wrapper>
+      <Image src={props.apod.url} />
       <DetailsWrapper>
         <ApodDetails apod={props.apod} />
       </DetailsWrapper>
