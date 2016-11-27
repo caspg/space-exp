@@ -17,8 +17,9 @@ const sendHtmlString = (res, renderProps, data) => {
   )
 
   const styles = styleSheet.rules().map(rule => rule.cssText).join('\n')
+  const bootData = JSON.stringify(data)
 
-  res.send(renderHtml({ content, styles, bootData: data }))
+  res.send(renderHtml({ content, styles, bootData }))
 }
 
 module.exports = sendHtmlString

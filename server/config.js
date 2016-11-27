@@ -4,10 +4,12 @@ const path = require('path')
 
 const app = express()
 
+const publicPath = path.resolve(__dirname, '../public')
+
 app.use(morgan('dev'))
 app.set('views', './server/views')
 app.set('view engine', 'ejs')
-app.use(express.static(path.resolve(__dirname, '../public')));
+app.use(express.static(publicPath));
 
 if (process.env.NODE_ENV !== 'production') {
   const webpackDevMiddleware = require('webpack-dev-middleware')

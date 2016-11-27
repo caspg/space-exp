@@ -9,6 +9,19 @@ class ApodDetailsContainer extends Component {
       .then(res => res.json())
   }
 
+  static handleInitialData({ data, params }) {
+    const { apods, apodDetails } = data
+    const { slug } = params
+
+    if (apodDetails && apodDetails.slug === slug) {
+      return apodDetails
+    } else if (apods && apods.lenght > 0) {
+      return apods.filter(a => a.slug === slug)[0]
+    }
+
+    return null
+  }
+
   constructor(props) {
     super(props)
     this.state = {

@@ -32,7 +32,7 @@ class FeedContainer extends Component {
 
 FeedContainer.propTypes = {
   data: PropTypes.shape({
-    apods: PropTypes.arrayOf(PropTypes.object).isRequired,
+    apods: PropTypes.arrayOf(PropTypes.object),
   }),
 }
 

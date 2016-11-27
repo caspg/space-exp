@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
   overflow: hidden;
 
   display: block;
-  width: 80%;
+  width: 100%;
   max-width: 600px;
   margin: 0 auto;
   margin-top: 100px;
