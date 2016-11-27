@@ -16,6 +16,7 @@ const renderRoute = (res, renderProps) => {
     const handleCreateElement = (Component, props) => (
        React.createElement(Component, { ...props, apods })
      )
+    const stringApods = JSON.stringify(apods)
     const content = renderToString(
       React.createElement(
         RouterContext,
@@ -23,7 +24,7 @@ const renderRoute = (res, renderProps) => {
       ),
     )
 
-    res.send(renderHtml({ content, styles }))
+    res.send(renderHtml({ content, styles, apods: stringApods }))
   })
 }
 

@@ -11,13 +11,14 @@ class AppContainer extends Component {
 
   constructor(props) {
     super(props)
+
     this.state = {
       apods: props.apods || [],
     }
   }
 
   componentDidMount() {
-    if (!this.props.apods) {
+    if (!this.state.apods || this.state.apods.length === 0) {
       AppContainer.fetchData().then((apods) => {
         this.setState({ apods })
       })

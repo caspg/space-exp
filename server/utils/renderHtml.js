@@ -1,6 +1,6 @@
 const globalStyle = require('styles/global').default
 
-module.exports = ({ content, styles }) => `
+module.exports = ({ content, styles, apods }) => `
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -11,14 +11,17 @@ module.exports = ({ content, styles }) => `
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
-    <style>
+    <style class="yolo">
       ${globalStyle}
       ${styles}
     </style>
   </head>
   <body>
-    <div id="app"><div>${content}</div></div>
+    <div id="app">${content}</div>
 
+    <script type=”application/json” id="boot-data">
+     ${apods}
+    </script>
     <script type="text/javascript" src="/bundles/app.bundle.js"></script>
   </body>
   </html>

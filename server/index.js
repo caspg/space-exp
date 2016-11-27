@@ -9,7 +9,7 @@ const PORT = 3000;
 
 app.use('/api', apiRouter)
 
-app.use((req, res) => {
+app.get('*', (req, res) => {
   serverSideRender(req, res)
 })
 
