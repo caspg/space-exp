@@ -8,13 +8,7 @@ const globalStyle = require('styles/global').default
 
 const getStyles = () => {
   const styles = styleSheet.rules().map(rule => rule.cssText).join('\n')
-  const concatedStyles = globalStyle.concat(' ', styles)
-
-  if (process.env.NODE_ENV === 'production') {
-    return concatedStyles.replace(/\s/g, '')
-  }
-
-  return concatedStyles
+  return globalStyle.concat(' ', styles)
 }
 
 const sendHtmlString = (res, renderProps, data) => {

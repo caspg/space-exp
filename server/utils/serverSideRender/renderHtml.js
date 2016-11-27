@@ -11,7 +11,7 @@ module.exports = ({ content, styles, bootData }) => `
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
-    <style class="yolo">
+    <style>
       ${styles}
     </style>
   </head>
