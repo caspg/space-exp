@@ -1,3 +1,3 @@
 export default {
-  headerHeight: '60px',
+  headerHeight: 60,
 }
