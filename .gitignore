@@ -2,3 +2,5 @@ node_modules/
 public/bundles
 public/thumbs
 tasks/create-thumb/tmp
+
+npm-debug.log

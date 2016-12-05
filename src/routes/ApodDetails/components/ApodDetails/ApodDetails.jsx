@@ -9,6 +9,8 @@ import {
   Date,
 } from './StyledComponents'
 
+import SharingButtons from '../SharingButtons'
+
 const renderCopyright = (copyright) => {
   if (!copyright) {
     return null
@@ -28,13 +30,14 @@ const ApodDetails = props => (
         {props.apod.title}
       </Title>
       {renderCopyright(props.apod.copyright)}
+      <Date>
+        {props.apod.date}
+      </Date>
     </Header>
     <Explanation>
       {props.apod.explanation}
     </Explanation>
-    <Date>
-      {props.apod.date}
-    </Date>
+    <SharingButtons />
   </DetailsDiv>
 )
 
