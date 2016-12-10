@@ -7,7 +7,9 @@ module.exports = ({ content, styles, bootData }) => `
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Space Experience</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
