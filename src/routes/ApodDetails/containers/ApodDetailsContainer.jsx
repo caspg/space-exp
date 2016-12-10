@@ -39,7 +39,12 @@ class ApodDetailsContainer extends Component {
 
   render() {
     const { apod } = this.state
-    return apod ? <ApodDetails apod={apod} /> : null
+
+    return (
+      apod ?
+        <ApodDetails slug={this.props.params.slug} apod={apod} /> :
+        null
+    )
   }
 }
 

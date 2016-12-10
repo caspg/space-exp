@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 
-import ApodDetails from '../ApodDetails'
+import Details from '../Details'
 import {
   DetailsContainer,
   Wrapper,
@@ -13,7 +13,7 @@ const ApodDetailsView = props => (
     <Wrapper>
       <Image src={props.apod.url} />
       <DetailsWrapper>
-        <ApodDetails apod={props.apod} />
+        <Details apod={props.apod} slug={props.slug} />
       </DetailsWrapper>
     </Wrapper>
   </DetailsContainer>
@@ -27,6 +27,7 @@ ApodDetailsView.propTypes = {
     explanation: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
   }),
+  slug: PropTypes.string.isRequired,
 }
 
 export default ApodDetailsView
