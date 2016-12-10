@@ -33,8 +33,6 @@ const Title = styled.h1`
   color: black;
 `
 
-console.log(Link)
-
 const Header = () => (
   <Headroom>
     <HeaderContent>
