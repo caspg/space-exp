@@ -17,10 +17,9 @@ app.get('/:slug', (req, res) => {
   renderApodDetails(req, res)
 })
 
-// app.get('*', (req, res) => {
-// as a fallback we should match route and send shell app
-  // res.send(renderHtml({}))
-// })
+app.get('*', (req, res) => {
+  res.status(404).send('Not found, yo!')
+})
 
 /* eslint-disable no-console */
 app.listen(PORT, '0.0.0.0', (err) => {
