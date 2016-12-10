@@ -17,10 +17,6 @@ app.get('/:slug', (req, res) => {
   renderApodDetails(req, res)
 })
 
-app.get('*', (req, res) => {
-  res.status(404).send('Not found, yo!')
-})
-
 /* eslint-disable no-console */
 app.listen(PORT, '0.0.0.0', (err) => {
   if (err) { console.log(err) }
