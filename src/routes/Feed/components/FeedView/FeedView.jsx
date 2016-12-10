@@ -1,21 +1,24 @@
 import React, { PropTypes } from 'react'
+import styled from 'styled-components'
 
-import CardSLayout from '../CardSLayout'
+import Card from '../Card'
 
-const FeedView = (props) => {
-  const { apods } = props
+const FeedDivContainer = styled.div`
+  text-align: center;
+`
 
-  if (!apods || apods.length === 0) {
-    return null
-  }
+const renderCards = apods => (
+  apods.map((apod, i) => <Card key={i} apod={apod} />)
+)
 
-  return (
-    <CardSLayout apods={apods} />
-  )
-}
+const FeedView = props => (
+  <FeedDivContainer>
+    {renderCards(props.apods)}
+  </FeedDivContainer>
+)
 
 FeedView.propTypes = {
-  apods: PropTypes.arrayOf(PropTypes.object),
+  apods: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 export default FeedView
