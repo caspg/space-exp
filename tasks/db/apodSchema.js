@@ -9,6 +9,9 @@ const apodSchema = mongoose.Schema({
   media_type: String,
   title: String,
   url: String,
+  imageSize: { width: Number, height: Number },
+  thumbSize: { width: Number, height: Number },
+  dominantColor: String,
 });
 
 module.exports = mongoose.model('Apod', apodSchema);

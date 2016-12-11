@@ -19,7 +19,7 @@ const dominantColor = slug =>
 
     exec(command, (err, stdout) => {
       if (err) console.log(err)
-      resolve(stdout)
+      resolve(stdout.replace(/^srgb/, 'rgb'))
     }
     )
   })
@@ -71,8 +71,8 @@ const handleImage = (url, slug) =>
 
     Promise.all(promises).then(values =>
       resolve({
-        image: values[0],
-        thumb: values[1],
+        imageSize: values[0],
+        thumbSize: values[1],
         dominantColor: values[2],
       })
     )
