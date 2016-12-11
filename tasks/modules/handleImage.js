@@ -48,7 +48,7 @@ const imageSize = gmImage =>
     })
   })
 
-export default (url, slug) =>
+const handleImage = (url, slug) =>
   new Promise((resolve) => {
     const gmImage = gm(request(url))
     const promises = [
@@ -64,3 +64,5 @@ export default (url, slug) =>
       })
     )
   })
+
+module.exports = handleImage
