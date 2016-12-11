@@ -1,10 +1,9 @@
-const mongoose = require('mongoose')
 const fs = require('fs')
 
-const initializeDb = require('../db')
-const Apod = require('../db/apodSchema')
+const db = require('../db')
+const Apod = require('../db/schema/apod')
 
-initializeDb()
+db.initialize()
 
 const saveCollectionToFile = (collection) => {
   const json = JSON.stringify(collection, null, 2)
@@ -23,5 +22,5 @@ const queryOptions = {
 
 Apod.find({}, '-_id -__v', queryOptions).then((collection) => {
   saveCollectionToFile(collection)
-  mongoose.disconnect()
+  db.disconnect()
 })
