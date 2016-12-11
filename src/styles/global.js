@@ -2,7 +2,7 @@ import colors from './constants/colors'
 
 const globalStyle = `
   body {
-    background-color: ${colors.black};
+    background-color: ${colors.spaceGrey};
     padding-bottom: 100px;
   }
 

@@ -5,7 +5,7 @@
   "author": "Kacper Golinski",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./server",
+    "start": "nodemon ./server",
     "build": "NODE_ENV=production webpack -p --config config/webpack/config.prod.js"
   },
   "dependencies": {
