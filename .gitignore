@@ -1,6 +1,9 @@
 node_modules/
 public/bundles
 public/thumbs
-tasks/create-thumb/tmp
 
 npm-debug.log
+
+tmp/*
+!tmp/.gitkeep
+tasks/create-thumb/tmp
