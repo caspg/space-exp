@@ -1,8 +1,7 @@
-/* eslint-disable comma-dangle */
 const fetchApod = require('./fetchApod')
 const handleImage = require('./handleImage')
 const slugify = require('./slugify')
-const Apod = require('../db/apodSchema')
+const Apod = require('../db/schema/apod')
 
 const mergeData = (...args) => Object.assign({}, ...args)
 
@@ -19,7 +18,7 @@ const mergeImageData = apodData =>
       })
   )
 
-const createApod = date =>
+const buildApod = date =>
   new Promise((resolve) => {
     fetchApod(date)
       .then(mergeSlug)
@@ -31,4 +30,4 @@ const createApod = date =>
       })
   })
 
-module.exports = createApod
+module.exports = buildApod
