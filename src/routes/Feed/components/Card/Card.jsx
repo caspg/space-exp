@@ -1,18 +1,25 @@
 import React, { PropTypes } from 'react'
 import styled from 'styled-components'
 
+import colors from 'styles/constants/colors'
+import constants from 'styles/constants'
 import StyledLink from 'components/StyledLink'
 import CardDetails from '../CardDetails'
 
 const CardWrapper = styled.div`
-  border-radius: 5px;
+  padding: 0 20px;
+`
+
+const CardBody = styled.div`
+  border-radius: 10px;
   overflow: hidden;
   display: block;
   width: 100%;
-  max-width: 600px;
+  max-width: ${constants.cardWidth}px;
   margin: 0 auto;
   margin-top: 100px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.40), 0 6px 6px rgba(0,0,0,0.53);
+  background-color: ${colors.grey200};
+  box-shadow: ${constants.boxShadow};
 `
 
 const Image = styled.img`
@@ -22,14 +29,16 @@ const Image = styled.img`
 
 const Card = props => (
   <CardWrapper>
-    <StyledLink to={`/${props.apod.slug}`}>
-      <Image src={`/thumbs/${props.apod.slug}.jpg`} />
+    <CardBody>
+      <StyledLink to={`/${props.apod.slug}`}>
+        <Image src={`/thumbs/${props.apod.slug}.jpg`} />
 
-      <CardDetails
-        title={props.apod.title}
-        explanation={props.apod.explanation}
-      />
-    </StyledLink>
+        <CardDetails
+          title={props.apod.title}
+          explanation={props.apod.explanation}
+        />
+      </StyledLink>
+    </CardBody>
   </CardWrapper>
 )
 

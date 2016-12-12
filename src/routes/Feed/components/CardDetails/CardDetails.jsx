@@ -5,9 +5,10 @@ import colors from 'styles/constants/colors'
 import truncate from 'utils/truncate'
 
 const StyledDiv = styled.div`
-  margin: 0;
+  margin: 0 auto;
   margin-top: -10px;
-  padding: 10px 20px;
+  padding: 20px;
+  max-width: 450px;
   background-color: ${colors.grey200};
   text-align: left;
 `
@@ -17,7 +18,7 @@ export const Title = styled.h2`
   font-weight: 900;
   margin-bottom: 1em;
   padding-bottom: 1em;
-  border-bottom: 1px solid ${colors.grey300};
+  border-bottom: 1px solid ${colors.grey400};
   text-decoration: none !important;
 `
 
@@ -32,7 +33,7 @@ const CardDetails = props =>
       {props.title}
     </Title>
     <Explanation>
-      {truncate(props.explanation, 250)}
+      {truncate(props.explanation, 140)}
     </Explanation>
   </StyledDiv>
 
