@@ -1,194 +1,188 @@
 [
   {
-    "copyright": "Babak Tafreshi",
-    "date": "2016-11-26",
-    "explanation": "On this November morning an old crescent Moon and morning star rise just before the Sun in a wide panoramic skyscape from Kenya's Amboseli National Park. Still below the limbs of an acacia tree and the eastern horizon, the Sun's position is easy to find though. It's marked at the left by the subtle convergence of light and shadow in the dawn sky. Known as crepuscular rays, the warm-colored rays of sunlight are outlined by shadows cast by unseen clouds near the horizon. Arcing above the profile of Mount Kilimanjaro, toward the right the rays of light and shadow converge at the western horizon. There known as anti-crepuscular rays, they indicate the point opposite the rising sun. The cloud shadows are very nearly parallel, but converge toward the distant horizons because of perspective.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/Tafreshi_DSC8114Ps.jpg",
+    "date": "2016-12-12",
+    "explanation": "The Cassini spacecraft's Grand Finale at Saturn has begun. The Grand Finale will allow Cassini to explore Saturn and some of Saturn's moons and rings in unprecedented detail.  The first phase started two weeks ago when a close flyby of Titan changed Cassini's orbit into one that passes near Saturn's poles and just outside of Saturn's outermost F-ring. Featured here is an image taken during the first of Cassini's 20 week-long F-ring orbits around Saturn.  Visible are the central polar vortex on the upper left, a hexagonal cloud boundary through the image center, and numerous light-colored turbulent storm systems. In 2017 April, Cassini will again use the gravity of Titan to begin a new series of 22 Proximal orbits -- trajectories that will take Cassini inside of Saturn's rings for the first time.  Cassini's new science adventure is scheduled to end on 2017 September 17, though, when the robotic spacecraft will be directed into a dramatic mission-ending dive into Saturn's atmosphere.    Free Download: APOD 2017 Calendar: NASA Images",
+    "hdurl": "http://apod.nasa.gov/apod/image/1612/NorthSaturn_Cassini_1024.jpg",
     "media_type": "image",
-    "title": "East to West, Light and Shadow",
-    "url": "http://apod.nasa.gov/apod/image/1611/Tafreshi_DSC8114Ps.jpg",
-    "slug": "2016-11-26-east-to-west-light-and-shadow"
+    "title": "Over Saturn's Turbulent North Pole",
+    "url": "http://apod.nasa.gov/apod/image/1612/NorthSaturn_Cassini_960.jpg",
+    "slug": "2016-12-12-over-saturns-turbulent-north-pole",
+    "dominantColor": "rgb(122,122,122)",
+    "thumbSize": {
+      "width": 600,
+      "height": 480
+    },
+    "imageSize": {
+      "width": 960,
+      "height": 768
+    }
   },
   {
-    "date": "2016-11-25",
-    "explanation": "Get out your red/blue glasses and check out this stereo scene from Taurus-Littrow valley on the Moon! The color anaglyph features a detailed 3D view of Apollo 17's Lunar Rover in the foreground -- behind it lies the Lunar Module and distant lunar hills. Because the world was  going to be able to watch the Lunar Module's ascent stage liftoff via the rover's TV camera, this parking place was also known as the VIP Site. In December of 1972, Apollo 17 astronauts Eugene Cernan and Harrison Schmitt spent about 75 hours on the Moon, while colleague Ronald Evans orbited overhead. The crew returned with 110 kilograms of rock and soil samples, more than from any of the other lunar landing sites. Cernan and Schmitt are still the last to walk (or drive) on the Moon.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/a17anaglyph_vanMeijgaarden_f.jpg",
+    "date": "2016-12-11",
+    "explanation": "What created the strange spiral structure on the left?  No one is sure, although it is likely related to a star in a binary star system entering the planetary nebula phase, when its outer atmosphere is ejected.  The huge spiral spans about a third of a light year across and, winding four or five complete turns, has a regularity that is without precedent.  Given the expansion rate of the spiral gas, a new layer must appear about every 800 years, a close match to the time it takes for the two stars to orbit each other. The star system that created it is most commonly known as LL Pegasi, but also AFGL 3068. The unusual structure itself has been cataloged as IRAS 23166+1655. The featured image was taken in near-infrared light by the Hubble Space Telescope. Why the spiral glows is itself a mystery, with a leading hypothesis being illumination by light reflected from nearby stars.",
+    "hdurl": "http://apod.nasa.gov/apod/image/1612/llpegspiral_hubble_1625.jpg",
     "media_type": "image",
-    "title": "Apollo 17 VIP Site Anaglyph",
-    "url": "http://apod.nasa.gov/apod/image/1611/a17anaglyph_vanMeijgaarden_c800.jpg",
-    "slug": "2016-11-25-apollo-17-vip-site-anaglyph"
+    "title": "The Extraordinary Spiral in LL Pegasi",
+    "url": "http://apod.nasa.gov/apod/image/1612/llpegspiral_hubble_960.jpg",
+    "slug": "2016-12-11-the-extraordinary-spiral-in-ll-pegasi",
+    "dominantColor": "rgb(20,19,21)",
+    "thumbSize": {
+      "width": 600,
+      "height": 443
+    },
+    "imageSize": {
+      "width": 960,
+      "height": 708
+    }
   },
   {
-    "date": "2016-11-24",
-    "explanation": "Scroll right and you can cruise along the icy rings of Saturn. This high resolution scan is a mosaic of images presented in natural color. The images were recorded in May 2007 over about 2.5 hours as the Cassini spacecraft passed above the unlit side of the rings. To help track your progress, major rings and gaps are labeled along with the distance from the center of the gas giant in kilometers. The alphabetical designation of Saturn's rings is historically based on their order of discovery; rings A and B are the bright rings separated by the Cassini division. In order of increasing distance from Saturn, the seven main rings run D,C,B,A,F,G,E. (Faint, outer rings G and E are not imaged here.) Four days from now, on November 29, Cassini will make a close flyby of Saturn's moon Titan and use the large moon's gravity to nudge the spacecraft into a series of 20 daring, elliptical, ring-grazing orbits. Diving through the ring plane just 11,000 kilometers outside the F ring (far right) Cassini's first ring-graze will be on December 4.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/PIA08389_fig1.jpg",
+    "copyright": "Alessandro Marchini",
+    "date": "2016-12-10",
+    "explanation": "The striking X appearing in this lunarscape is easily visible in binoculars or a small telescope. Yet, not too many have seen it. The catch is this lunar X is fleeting, only apparent in the hours before the Moon's first quarter phase. At the terminator, or shadow line between lunar day and night, the X illusion is produced by a configuration of the craters Blanchinus, La Caille and Purbach. Near the Moon's first quarter phase, an astronaut standing close to the craters' position would see the slowly rising Sun very near the horizon. Temporarily, the crater walls would be in sunlight while the crater floors were still in darkness. Seen from planet Earth, contrasting sections of bright walls against the dark floors by chance look remarkably like an X. This sharp image of the Lunar X was captured at approximately 16:45 UT on December 6, 2016. For extra credit, sweep your gaze along the lunar terminator and you can also spot the Lunar V.",
+    "hdurl": "http://apod.nasa.gov/apod/image/1612/Luna_20161206h17.40LT_Lunar-X_inset.jpg",
     "media_type": "image",
-    "title": "Ring Scan",
-    "url": "http://apod.nasa.gov/apod/image/1611/PIA08389_fig1_h500.jpg",
-    "slug": "2016-11-24-ring-scan"
+    "title": "The Lunar X",
+    "url": "http://apod.nasa.gov/apod/image/1612/Luna_20161206h17.40LT_Lunar-X_insetcrop.jpg",
+    "slug": "2016-12-10-the-lunar-x",
+    "dominantColor": "rgb(43,41,41)",
+    "thumbSize": {
+      "width": 600,
+      "height": 469
+    },
+    "imageSize": {
+      "width": 1024,
+      "height": 800
+    }
   },
   {
-    "copyright": "Sébastien Gozé",
-    "date": "2016-11-23",
-    "explanation": "Do you see the bubble in the center?  Seemingly adrift in a cosmic sea of stars and glowing gas, the delicate, floating apparition in this widefield view is cataloged as NGC 7635 - The Bubble Nebula. A mere 10 light-years wide, the tiny Bubble Nebula and the larger complex of interstellar gas and dust clouds are found about 11,000 light-years distant, straddling the boundary between the parental constellations Cepheus and Cassiopeia. Also included in the breathtaking vista is open star cluster M52 (upper left), some 5,000 light-years away. The featured image spans about two degrees on the sky corresponding to a width of about 375 light-years at the estimated distance of the Bubble Nebula.   Follow APOD on: Facebook,  Google Plus,  Instagram, or Twitter",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/Bubble_Goze_1600.jpg",
+    "copyright": "R. Colombari",
+    "date": "2016-12-09",
+    "explanation": "South of Antares, in the tail of the nebula-rich constellation Scorpius, lies emission nebula IC 4628. Nearby hot, massive stars, millions of years young, irradiate the nebula with invisible ultraviolet light, stripping electrons from atoms. The electrons eventually recombine with the atoms to produce the visible nebular glow, dominated by the red emission of hydrogen. At an estimated distance of 6,000 light-years, the region shown is about 250 light-years across, spanning over three full moons on the sky. The nebula is also cataloged as Gum 56 for Australian astronomer Colin Stanley Gum, but seafood-loving astronomers might know this cosmic cloud as the Prawn Nebula. The tantalizing color image is a new astronomical composition using data from the European Southern Observatory's wide field OmegaCAM and amateur images made under dark skies on the Canary Island of Tenerife.",
+    "hdurl": "http://apod.nasa.gov/apod/image/1612/ic4628_colombari_1853.jpg",
     "media_type": "image",
-    "title": "NGC 7635: Bubble in a Cosmic Sea",
-    "url": "http://apod.nasa.gov/apod/image/1611/Bubble_Goze_960.jpg",
-    "slug": "2016-11-23-ngc-7635-bubble-in-a-cosmic-sea"
+    "title": "IC 4628: The Prawn Nebula",
+    "url": "http://apod.nasa.gov/apod/image/1612/ic4628_colombari_1024.jpg",
+    "slug": "2016-12-09-ic-4628-the-prawn-nebula",
+    "dominantColor": "rgb(72,44,54)",
+    "thumbSize": {
+      "width": 599,
+      "height": 347
+    },
+    "imageSize": {
+      "width": 1024,
+      "height": 593
+    }
   },
   {
-    "date": "2016-11-22",
-    "explanation": "Is there an ocean below Sputnik Planum on Pluto? The unusually smooth 1000-km wide golden expanse, visible in the featured image from New Horizons, appears segmented into convection cells. But how was this region created?  One hypothesis now holds the answer to be a great impact that stirred up an underground ocean of salt water roughly 100-kilometers thick.  The featured image of Sputnik Planum, part of the larger heart-shaped Tombaugh Regio, was taken last July and shows true details in exaggerated colors. Although the robotic New Horizons spacecraft is off on a new adventure, continued computer-modeling of this surprising surface feature on Pluto is likely to lead to more refined speculations about what lies beneath.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/SputnikPlanum_NewHorizons_1180.jpg",
+    "copyright": "José\nJ. Chambó",
+    "date": "2016-12-08",
+    "explanation": "Not a comet, bright spiral galaxy Messier 51 is popularly known as the Whirlpool Galaxy. Just off the handle of the Big Dipper in northern skies, you can spot it at the upper left in this image from December 1st. The pretty 4 by 2.5 degree wide field of view does contain two comets though. Different in appearance, both comets are new visitors to the inner Solar System and are currently faint telescopic objects, highest above northern horizons in morning twilight. At lower left newly discovered comet NEOWISE (C/2016 U1) shows off a round fuzzy coma in the greenish light of diatomic carbon gas fluorescing in sunlight. Sunlight reflects from dust in the coma and stubby tail of comet Johnson (C/2015 V2) at upper right.",
+    "hdurl": "http://apod.nasa.gov/apod/image/1612/2016U1&2015V2_161201_2400chambo.jpg",
     "media_type": "image",
-    "title": "Pluto's Sputnik Planum",
-    "url": "http://apod.nasa.gov/apod/image/1611/SputnikPlanum_NewHorizons_960.jpg",
-    "slug": "2016-11-22-plutos-sputnik-planum"
+    "title": "Whirlpool with Comets",
+    "url": "http://apod.nasa.gov/apod/image/1612/2016U1&2015V2_161201_1200chambo.jpg",
+    "slug": "2016-12-08-whirlpool-with-comets",
+    "dominantColor": "rgb(24,24,23)",
+    "thumbSize": {
+      "width": 600,
+      "height": 400
+    },
+    "imageSize": {
+      "width": 1200,
+      "height": 800
+    }
   },
   {
-    "copyright": "Jeff Dai",
-    "date": "2016-11-21",
-    "explanation": "A nova in Sagittarius is bright enough to see with binoculars.  Discovered last month by the All-Sky Automated Survey for Supernovae (ASAS-SN), the stellar explosion even approached the limit of naked-eye visibility last week. A classical nova results from a thermonuclear explosion on the surface of a white dwarf star -- a dense star having the size of our Earth but the mass of our Sun.  In the featured image, the nova was captured last week above ancient Wat Mahathat in Sukhothai, Thailand. To see Nova Sagittarius 2016 yourself, just go out just after sunset and locate near the western horizon the constellation of the Archer (Sagittarius), popularly identified with an iconic teapot.  Also visible near the nova is the very bright planet Venus. Dont delay, though, because not only is the nova fading, but that part of the sky is setting continually closer to sunset.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/NovaSag2016_Dai_1500_annotated.jpg",
+    "date": "2016-12-07",
+    "explanation": "What's happening at the center of elliptical galaxy NGC 4696? There, long tendrils of gas and dust have been imaged in great detail as shown by this recently released image from the Hubble Space Telescope.  These filaments appear to connect to the central region of the galaxy, a region thought occupied by a supermassive black hole.  Speculation holds that this black hole pumps out energy that heats surrounding gas, pushes out cooler filaments of gas and dust, and shuts down star formation. Balanced by magnetic fields, these filaments then appear to spiral back in toward and eventually circle the central black hole. NGC 4696 is the largest galaxy in the Centaurus Cluster of Galaxies, located about 150 million light years from Earth. The featured image shows a region about 45,000 light years across.",
+    "hdurl": "http://apod.nasa.gov/apod/image/1612/ngc4696_Hubble_1500.jpg",
     "media_type": "image",
-    "title": "Nova over Thailand",
-    "url": "http://apod.nasa.gov/apod/image/1611/NovaSag2016_Dai_960_annotated.jpg",
-    "slug": "2016-11-21-nova-over-thailand"
+    "title": "NGC 4696: Filaments around a Black Hole",
+    "url": "http://apod.nasa.gov/apod/image/1612/ngc4696_Hubble_960.jpg",
+    "slug": "2016-12-07-ngc-4696-filaments-around-a-black-hole",
+    "dominantColor": "rgb(51,45,42)",
+    "thumbSize": {
+      "width": 600,
+      "height": 484
+    },
+    "imageSize": {
+      "width": 960,
+      "height": 774
+    }
   },
   {
-    "date": "2016-11-20",
-    "explanation": "How much mass do flocculent spirals hide?  The featured true color image of flocculent spiral galaxy NGC 4414 was taken with the Hubble Space Telescope to help answer this question. The featured image was augmented with data from the Sloan Digital Sky Survey (SDSS).  Flocculent spirals -- galaxies without well-defined spiral arms -- are a quite common form of galaxy, and NGC 4414 is one of the closest.  Stars and gas near the visible edge of spiral galaxies orbit the center so fast that the gravity from a large amount of unseen dark matter must be present to hold them together.  Understanding the matter and dark matter distribution of NGC 4414 helps humanity calibrate the rest of the galaxy and, by deduction, flocculent spirals in general.  Further, calibrating the distance to NGC 4414 helps  humanity calibrate the cosmological distance scale of the entire  visible universe.   Free Download: APOD 2017 Calendar: NASA Images",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/ngc4414_HubbleSdss_2069.jpg",
+    "date": "2016-12-06",
+    "explanation": "Why is there a glowing oval over Jupiter's South Pole? Aurora.  Near the closest part of its first pass near Jupiter in August, NASA's robotic spacecraft Juno captured this dramatic infrared image of a bright auroral ring. Auroras are caused by high energy particles from the Sun interacting with a planet's magnetic field, and ovals around magnetic poles are common.  Data from Juno are giving preliminary indications that Jupiter's magnetic field and aurorae are unexpectedly powerful and complex.  Unfortunately, a computer glitch caused Juno to go into safe mode during its last pass near the Jovian giant in October. That glitch has now been resolved, making Juno ready for its next pass over Jupiter's cloud tops this coming Sunday.",
+    "hdurl": "http://apod.nasa.gov/apod/image/1612/Aurora2_Juno_1041.jpg",
     "media_type": "image",
-    "title": "NGC 4414: A Flocculent Spiral Galaxy",
-    "url": "http://apod.nasa.gov/apod/image/1611/ngc4414_HubbleSdss_960.jpg",
-    "slug": "2016-11-20-ngc-4414-a-flocculent-spiral-galaxy"
+    "title": "Aurora over Jupiter's South Pole from Juno",
+    "url": "http://apod.nasa.gov/apod/image/1612/Aurora2_Juno_960.jpg",
+    "slug": "2016-12-06-aurora-over-jupiters-south-pole-from-juno",
+    "dominantColor": "rgb(104,7,2)",
+    "thumbSize": {
+      "width": 600,
+      "height": 466
+    },
+    "imageSize": {
+      "width": 960,
+      "height": 745
+    }
   },
   {
-    "copyright": "Chanctonbury\nObservatory",
-    "date": "2016-11-19",
-    "explanation": "The recognizable profile of the Pelican Nebula soars nearly 2,000 light-years away in the high flying constellation Cygnus, the Swan. Also known as IC 5070, this interstellar cloud of gas and dust is appropriately found just off the \"east coast\" of the North America Nebula (NGC 7000), another surprisingly familiar looking emission nebula in Cygnus. Both Pelican and North America nebulae are part of the same large and complex star forming region, almost as nearby as the better-known Orion Nebula. From our vantage point, dark dust clouds (upper left) help define the Pelican's eye and long bill, while a bright front of ionized gas suggests the curved shape of the head and neck. This striking synthesized color view utilizes narrowband image data recording the emission of hydrogen and oxygen atoms in the cosmic cloud.  The scene spans some 30 light-years at the estimated distance of the Pelican Nebula.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/IC5070_Pelican_Nebula_Steve_Richards2048.jpg",
+    "copyright": "Joe Randall",
+    "date": "2016-12-05",
+    "explanation": "Have you ever watched a lightning storm in awe?  Join the crowd. Oddly, nobody knows exactly how lightning is produced. What is known is that charges slowly separate in some clouds causing rapid electrical discharges (lightning), but how electrical charges get separated in clouds remains a topic of much research. Lightning usually takes a jagged course, rapidly heating a thin column of air to about three times the surface temperature of the Sun.  The resulting shock wave starts supersonically and decays into the loud sound known as thunder.  Lightning bolts are common in clouds during rainstorms, and on average 44 lightning bolts occur on the  Earth every second. Pictured, over 60 images were stacked to capture the flow of lightning-producing storm clouds in July over Colorado Springs, Colorado, USA.    Follow APOD on: Facebook,  Google Plus,  Instagram, or Twitter",
+    "hdurl": "http://apod.nasa.gov/apod/image/1612/LightningStorm_Randall_5184.jpg",
     "media_type": "image",
-    "title": "IC 5070: A Dusty Pelican in the Swan",
-    "url": "http://apod.nasa.gov/apod/image/1611/IC5070_Pelican_Nebula_Steve_Richards1024.jpg",
-    "slug": "2016-11-19-ic-5070-a-dusty-pelican-in-the-swan"
+    "title": "Lightning over Colorado",
+    "url": "http://apod.nasa.gov/apod/image/1612/LightningStorm_Randall_1080.jpg",
+    "slug": "2016-12-05-lightning-over-colorado",
+    "dominantColor": "rgb(130,107,125)",
+    "thumbSize": {
+      "width": 600,
+      "height": 400
+    },
+    "imageSize": {
+      "width": 1080,
+      "height": 720
+    }
   },
   {
-    "copyright": "Catching the Light",
-    "date": "2016-11-18",
-    "explanation": "A supermoon sets over the metropolis of Philadelphia in this twilight snapshot captured on November 14 at 6:21am Eastern Standard Time. Within hours of the Moon's exact full phase, that time does correspond to a lunar perigee or the closest point in the Moon's elliptical orbit around our fair planet. Slightly bigger and brighter at perigee, this Full Moon is still flattened and distorted in appearance by refraction in atmospheric layers along the sight-line near the horizon. Also like more ordinary Full Moons, it shines with the warm color of sunlight. Joined by buildings along the Philadelphia skyline, the perigee full moonlight is reflected in the waters of the mighty Cooper River.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/Supermoon_20161114lodriguss.jpg",
+    "copyright": "Rogelio\nBernal Andreo",
+    "date": "2016-12-04",
+    "explanation": "Familiar stars in Orion and constellations across the sky now have official names. Over the past year, the International Astronomical Union, the only body officially tasked with naming stars, approved names already in common use for 227 of the brightest stars, including the most famous stars on the sky Sirius, Polaris, and Betelgeuse.  Pictured, the constellation of Orion is shown with several of these now-official star names superposed.  Spanning about 30 degrees, this breath-taking vista stretches across the well-known constellation from head to toe (left to right) and beyond. The common names for all three stars in Orion's belt are also now official.  At 1,500 light years away, the Great Orion Nebula is the closest large star forming region, here visible just right and below center. Also visible are famous nebulae including the Horsehead Nebula and the Witch Head Nebula. Of course, the Orion Nebula and bright stars are easy to see with the unaided eye, but dust clouds and emission from the extensive interstellar gas in this nebula-rich complex, are too faint and much harder to record. In the featured mosaic of broadband telescopic images, additional image data acquired with a narrow hydrogen alpha filter was used to bring out the pervasive tendrils of energized atomic hydrogen gas like in the arc of the giant Barnard's Loop.    Open Science: Browse 1,350+ codes in the Astrophysics Source Code Library",
+    "hdurl": "http://apod.nasa.gov/apod/image/1503/OrionClouds_Andreo_2048.jpg",
     "media_type": "image",
-    "title": "Philadelphia Perigee Full Moon",
-    "url": "http://apod.nasa.gov/apod/image/1611/Supermoon_20161114_1024lodriguss.jpg",
-    "slug": "2016-11-18-philadelphia-perigee-full-moon"
+    "title": "Orion and Official Star Names",
+    "url": "http://apod.nasa.gov/apod/image/1503/OrionClouds_Andreo_Annotated_1080.jpg",
+    "slug": "2016-12-04-orion-and-official-star-names",
+    "dominantColor": "rgb(47,35,39)",
+    "thumbSize": {
+      "width": 600,
+      "height": 392
+    },
+    "imageSize": {
+      "width": 1080,
+      "height": 706
+    }
   },
   {
-    "date": "2016-11-17",
-    "explanation": "Faster than a speeding bullet, more powerful than a locomotive, and able to leap tall buildings in a single bound, this Soyuz rocket stands on the launch pad at Baikonur Cosmodrome in Kazakhstan on November 14. Beyond it rises a supermoon, but fame for exceptional feats of speed, strength, and agility is not the reason November's Full Moon was given this popular name. Instead, whenever a Full Moon shines near perigee, the closest point in its elliptical orbit around Earth, it appears larger and brighter than other more distant Full Moons, and so a supermoon is born. In fact, November's supermoon was the second of three consecutive supermoons in 2016. It was also the closest and most superest Full Moon since 1948. Meanwhile, the mild mannered Soyuz rocket is scheduled to launch its Expedition 50/51 crew to the International Space Station today, November 17.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/nhq201611140001.jpg",
+    "copyright": "Péter\nFeltóti",
+    "date": "2016-12-03",
+    "explanation": "This wide, sharp telescopic view reveals galaxies scattered beyond the stars of the Milky Way at the northern boundary of the high-flying constellation Pegasus. Prominent at the upper right is NGC 7331. A mere 50 million light-years away, the large spiral is one of the brighter galaxies not included in Charles Messier's famous 18th century catalog. The disturbed looking group of galaxies at the lower left is well-known as Stephan's Quintet. About 300 million light-years distant, the quintet dramatically illustrates a multiple galaxy collision, its powerful, ongoing interactions posed for a brief cosmic snapshot. On the sky, the quintet and NGC 7331 are separated by about half a degree.",
+    "hdurl": "http://apod.nasa.gov/apod/image/1612/KESZ_18_vagas16-9_feliratos2048.jpg",
     "media_type": "image",
-    "title": "Soyuz vs Supermoon",
-    "url": "http://apod.nasa.gov/apod/image/1611/nhq201611140001_900x1238.jpg",
-    "slug": "2016-11-17-soyuz-vs-supermoon"
-  },
-  {
-    "copyright": "David Lindemann",
-    "date": "2016-11-16",
-    "explanation": "Is the heart and soul of our Galaxy located in Cassiopeia?  Possibly not, but that is where two bright emission nebulas nicknamed Heart and Soul can be found.  The Heart Nebula, officially dubbed IC 1805 and visible in the featured image on the right, has a shape reminiscent of a classical heart symbol.  Both nebulas shine brightly in the red light of energized hydrogen.  Several young open clusters of stars populate the image and are visible here in blue, including the nebula centers.  Light takes about 6,000 years to reach us from these nebulas, which together span roughly 300 light years.  Studies of stars and clusters like those found in the Heart and Soul Nebulas have focused on how massive stars form and how they affect their environment.   Follow APOD on: Facebook,  Google Plus,  Instagram, or Twitter",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/HeartSoul_Lindemann_1280.jpg",
-    "media_type": "image",
-    "title": "The Heart and Soul Nebulas",
-    "url": "http://apod.nasa.gov/apod/image/1611/HeartSoul_Lindemann_960.jpg",
-    "slug": "2016-11-16-the-heart-and-soul-nebulas"
-  },
-  {
-    "date": "2016-11-15",
-    "explanation": "Why is it so warm in northern North America? Usually during this time of year -- mid-November -- temperatures average as much as 30 degrees colder. Europe is not seeing a similar warming.  One factor appears to be an unusually large and stable high pressure region that has formed over Canada, keeping normally colder arctic air away.  Although the fundamental cause of any weather pattern is typically complex, speculation holds that this persistent Canadian anticyclonic region is related to warmer than average sea surface temperatures in the mid-Pacific -- an El Niño -- operating last winter.  North Americans should enjoy it while it lasts, though. In the next week or two, cooler-than-average temperatures now being recorded in the mid-Pacific -- a La Niña -- might well begin to affect North American wind and temperature patterns.   APOD Galleries: Best of Supermoon 2016 (I), Best of Supermoon 2016 (II)",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/WarmTempsNA2_CCI_722.jpg",
-    "media_type": "image",
-    "title": "Cold Weather Delayed over North America",
-    "url": "http://apod.nasa.gov/apod/image/1611/WarmTempsNA2_CCI_960.jpg",
-    "slug": "2016-11-15-cold-weather-delayed-over-north-america"
-  },
-  {
-    "copyright": "Kris Smith",
-    "date": "2016-11-14",
-    "explanation": "What are those specks in front of the Moon? They are silhouettes of the International Space Station (ISS).  Using careful planning and split-second timing, a meticulous lunar photographer captured ten images of the ISS passing in front of last month's full moon. But this wasn't just any full moon -- this was the first of the three consecutive 2016 supermoons.  A supermoon is a full moon that appears a few percent larger and brighter than most other full moons.  The featured image sequence was captured near Dallas, Texas. Occurring today is the second supermoon of this series, a full moon that is the biggest and brightest not only of the year, but of any year since 1948.  To see today's super-supermoon yourself, just go outside at night and look up. The third supermoon of this year's series will occur in mid-December.   APOD Gallery: Best of Supermoon 2016",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/ISStransit_Smith_3000.jpg",
-    "media_type": "image",
-    "title": "Supermoon and Space Station",
-    "url": "http://apod.nasa.gov/apod/image/1611/ISStransit_Smith_960.jpg",
-    "slug": "2016-11-14-supermoon-and-space-station"
-  },
-  {
-    "copyright": "Juan Lozano de Haro",
-    "date": "2016-11-12",
-    "explanation": "Galaxies abound in this well-chosen field of view that spans about 1 degree on the sky toward the northern constellation Andromeda. At top right is large spiral galaxy NGC 891, 100 thousand light-years across and seen almost exactly edge-on. About 30 million light-years distant, NGC 891 looks a lot like our own Milky Way with a flattened, thin, galactic disk. Its disk and central bulge are cut along the middle by dark, obscuring dust clouds. Scattered toward the lower left, and beyond a foreground of Milky Way stars, are members of galaxy cluster Abell 347. Nearly 240 million light-years away, Abell 347 shows off its own large galaxies in the sharp telescopic image. They are similar to NGC 891 in physical size but located almost 8 times farther away, so Abell 347 galaxies have roughly one eighth the apparent size of NGC 891.  Watch: Closest Full Moon since 1948",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/NGC891vsA347-2048CopyrightJuanLozano.jpg",
-    "media_type": "image",
-    "title": "NGC 891 vs Abell 347",
-    "url": "http://apod.nasa.gov/apod/image/1611/NGC891vsA347-1024CopyrightJuanLozano.jpg",
-    "slug": "2016-11-12-ngc-891-vs-abell-347"
-  },
-  {
-    "copyright": "Steve\nCannistra",
-    "date": "2016-11-11",
-    "explanation": "Hot, young stars and cosmic pillars of gas and dust seem to crowd into NGC 7822. At the edge of a giant molecular cloud toward the northern constellation Cepheus, the glowing star forming region lies about 3,000 light-years away. Within the nebula, bright edges and dark shapes stand out in this colorful skyscape. The image includes data from narrowband filters, mapping emission from atomic oxygen, hydrogen, and sulfur into blue, green, and red hues. The emission line and color combination has become well-known as the Hubble palette. The atomic emission is powered by energetic radiation from the central hot stars. Their powerful winds and radiation sculpt and erode the denser pillar shapes and clear out a characteristic cavity light-years across the center of the natal cloud. Stars could still be forming inside the pillars by gravitational collapse but as the pillars are eroded away, any forming stars will ultimately be cutoff from their reservoir of star stuff. This field of view spans over 40 light-years at the estimated distance of NGC 7822.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/ngc7822narrowbandlarger_cannistra.jpg",
-    "media_type": "image",
-    "title": "NGC 7822 in Cepheus",
-    "url": "http://apod.nasa.gov/apod/image/1611/ngc7822narrowbandlarger_cannistraC1024.jpg",
-    "slug": "2016-11-11-ngc-7822-in-cepheus"
-  },
-  {
-    "copyright": "Rogelio Bernal\nAndreo",
-    "date": "2016-11-10",
-    "explanation": "Over 100 telescopic image panels in this stunning vertical mosaic span about 50 degrees across the night sky. They follow part of the Great Rift, the dark river of dust and molecular gas that stretches along the plane of our Milky Way Galaxy. Start at top center and you can follow the galactic equator down through brighter stars in constellations Aquila, Serpens Cauda, and Scutum. At the bottom is Sagittarius near the center of the Milky Way. Along the way you'll encounter many obscuring dark nebulae hundreds of light-years distant flanked by bands of Milky Way starlight, and the telltale reddish glow of starforming regions. Notable Messier objects include The Eagle (M16) and Omega (M17) nebulae, the Sagittarius Star Cloud (M24), the beautiful Trifid (M20) and the deep Lagoon (M8).",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/MW_ALL_2048x4038Vandreo.jpg",
-    "media_type": "image",
-    "title": "Great Rift Near the Center of the Milky Way",
-    "url": "http://apod.nasa.gov/apod/image/1611/MW_ALL_900x1775Vandreo.jpg",
-    "slug": "2016-11-10-great-rift-near-the-center-of-the-milky-way"
-  },
-  {
-    "date": "2016-11-09",
-    "explanation": "One of the bright spiral galaxies visible in the north sky is M63, the Sunflower Galaxy.  M63, also catalogued as NGC 5055, can be found with a small telescope toward the constellation of Hunting Dogs (Canes Venatici).  The featured picture from the Hubble Space Telescope exhibits the center of M63, complete with long winding spiral arms glowing blue from a few bright young stars, emission nebulae glowing red from hot ionized hydrogen gas, and dark dust in numerous filaments.  M63 interacts gravitationally with M51 (the Whirlpool Galaxy) and several smaller galaxies.  Light takes about 35 million years to reach us from M63, and about 60,000 years to cross the spiral galaxy.  Stars in the outer regions of the Sunflower Galaxy rotate about the center at a speed so high that, given the matter seen and assuming normal gravity, they should fly off into space. The fact that the stars remain  indicates the presence of sort of invisible, gravitationally-binding, dark matter.   Free Download: APOD 2017 Calendar: NASA Images",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/M63_Hubble_1098.jpg",
-    "media_type": "image",
-    "title": "M63: The Sunflower Galaxy from Hubble",
-    "url": "http://apod.nasa.gov/apod/image/1611/M63_Hubble_960.jpg",
-    "slug": "2016-11-09-m63-the-sunflower-galaxy-from-hubble"
-  },
-  {
-    "copyright": "Josep Drudis",
-    "date": "2016-11-08",
-    "explanation": "It is the largest and most complex star forming region in the entire galactic neighborhood. Located in the Large Magellanic Cloud, a small satellite galaxy orbiting our Milky Way galaxy, the region's spidery appearance is responsible for its popular name, the Tarantula nebula. This tarantula, however, is about 1,000 light-years across. Were it placed at the distance of Milky Way's Orion Nebula, only 1,500 light-years distant and the nearest stellar nursery to Earth, it would appear to cover about 30 degrees (60 full moons) on the sky. Intriguing details of the nebula are visible in the featured image shown in  colors emitted predominantly by hydrogen and oxygen.  The spindly arms of the Tarantula nebula surround NGC 2070, a star cluster that contains some of the brightest, most massive stars known, visible in blue in the image center. Since massive stars live fast and die young, it is not so surprising that the cosmic Tarantula also lies near the site of the closest recent supernova.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/Tarantula_Drudis_2430.jpg",
-    "media_type": "image",
-    "title": "The Cosmic Web of the Tarantula Nebula",
-    "url": "http://apod.nasa.gov/apod/image/1611/Tarantula_Drudis_960.jpg",
-    "slug": "2016-11-08-the-cosmic-web-of-the-tarantula-nebula"
-  },
-  {
-    "copyright": "Mark Hersch",
-    "date": "2016-11-07",
-    "explanation": "How could that city be upside-down? The city, Chicago, was actually perfectly right-side up. The long shadows it projected onto nearby Lake Michigan near sunset, however, when seen in reflection, made the buildings appear inverted. This fascinating, puzzling, yet beautiful image was captured by a photographer in 2014 on an airplane on approach to Chicago's O'Hare International Airport.  The Sun can be seen both above and below the cloud deck, with the latter reflected in the calm lake.  As a bonus, if you look really closely -- and this is quite a challenge -- you can find another airplane in the image, likely also on approach to the same airport.",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/ChicagoClouds_Hersch_3600.jpg",
-    "media_type": "image",
-    "title": "Inverted City Beneath Clouds",
-    "url": "http://apod.nasa.gov/apod/image/1611/ChicagoClouds_Hersch_960.jpg",
-    "slug": "2016-11-07-inverted-city-beneath-clouds"
-  },
-  {
-    "date": "2016-11-06",
-    "explanation": "A mere 20,000 light-years from the Sun lies NGC 3603, a resident of the nearby Carina spiral arm of our Milky Way Galaxy. NGC 3603 is well known to astronomers as one of the Milky Way's largest star-forming regions. The central open star cluster contains thousands of stars more massive than our Sun, stars that likely formed only one or two million years ago in a single burst of star formation. In fact, nearby NGC 3603 is thought to contain a convenient example of the massive star clusters that populate much more distant starburst galaxies. Surrounding the cluster are natal clouds of glowing interstellar gas and obscuring dust, sculpted by energetic stellar radiation and winds. Recorded by the Hubble Space Telescope, the image spans about 17 light-years.   Follow APOD on: Facebook,  Google Plus,  Instagram, or Twitter",
-    "hdurl": "http://apod.nasa.gov/apod/image/1611/ngc3603_hubble_3885.jpg",
-    "media_type": "image",
-    "title": "Starburst Cluster in NGC 3603",
-    "url": "http://apod.nasa.gov/apod/image/1611/ngc3603_hubble_960.jpg",
-    "slug": "2016-11-06-starburst-cluster-in-ngc-3603"
+    "title": "Galaxies in Pegasus",
+    "url": "http://apod.nasa.gov/apod/image/1612/KESZ_18_vagas16-9_feliratos1024.jpg",
+    "slug": "2016-12-03-galaxies-in-pegasus",
+    "dominantColor": "rgb(24,24,24)",
+    "thumbSize": {
+      "width": 600,
+      "height": 353
+    },
+    "imageSize": {
+      "width": 1024,
+      "height": 602
+    }
   }
 ]

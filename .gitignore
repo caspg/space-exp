@@ -6,4 +6,4 @@ npm-debug.log
 
 tmp/*
 !tmp/.gitkeep
-tasks/create-thumb/tmp
+tasks/apod-json/tmp
