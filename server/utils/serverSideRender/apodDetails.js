@@ -1,4 +1,4 @@
-const ApodDetailsContainer = require('routes/ApodDetails/containers/ApodDetailsContainer').default
+const ApodDetailsContainer = require('routes/ApodDetails/ApodDetailsContainer').default
 const matchRoute = require('./matchRoute')
 const sendHtmlString = require('./sendHtmlString')
 

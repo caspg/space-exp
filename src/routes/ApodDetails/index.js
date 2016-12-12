@@ -12,7 +12,7 @@ export default () => ({
   onEnter: handleOnEnter,
   getComponent: (nextState, cb) => {
     require.ensure([], (require) => {
-      const ApodDetailsContainer = require('./containers/ApodDetailsContainer').default
+      const ApodDetailsContainer = require('./ApodDetailsContainer').default
 
       cb(null, ApodDetailsContainer)
     }, 'apod-details');

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 
 import { fetchApodDetails } from 'utils/api'
-import ApodDetails from '../components/ApodDetailsView'
+import ApodDetailsLayout from './ApodDetailsLayout'
 
 class ApodDetailsContainer extends Component {
   static fetchData(slug) {
@@ -42,7 +42,7 @@ class ApodDetailsContainer extends Component {
 
     return (
       apod ?
-        <ApodDetails slug={this.props.params.slug} apod={apod} /> :
+        <ApodDetailsLayout slug={this.props.params.slug} apod={apod} /> :
         null
     )
   }

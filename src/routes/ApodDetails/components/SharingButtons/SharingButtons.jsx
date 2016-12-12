@@ -13,13 +13,12 @@ const Container = styled.div`
   padding: 20px 0;
 `
 
-const SharingButtons = (props) => {
-  const { slug, title } = props.data
+const SharingButtons = ({ slug, title }) => {
   const url = `${constants.siteUrl}/${slug}`
 
   return (
     <Container>
-      <h4>Share your space experience with your friends:</h4>
+      <h4>Share your space experience with your friends.</h4>
 
       <div>
         <Facebook url={url} />
@@ -33,10 +32,8 @@ const SharingButtons = (props) => {
 }
 
 SharingButtons.propTypes = {
-  data: PropTypes.shape({
-    slug: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }),
+  slug: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 }
 
 export default SharingButtons
