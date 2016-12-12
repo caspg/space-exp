@@ -10,9 +10,11 @@ import SharingButtons from '../SharingButtons'
 const CardWrapper = styled.div`
   text-align: center;
   margin-top: 0;
+  padding: 0;
 
   @media (min-width: ${constants.mobileMediaQuery}px) {
     margin-top: 50px;
+    padding: 0 20px;
   }
 `
 
@@ -22,27 +24,49 @@ const CardBody = styled.div`
   background-color: ${colors.grey200};
   box-shadow: ${constants.boxShadow};
   overflow: hidden;
-  display: inline-block;
 
   @media (min-width: ${constants.mobileMediaQuery}px) {
-    margin: 0 20px;
     border-radius: 10px;
+    display: inline-block;
   }
+`
+
+const ImageWrapper = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  height: 0;
+  position: relative;
 `
 
 const StyledImage = styled.img`
   max-width:100%;
   max-height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 `
 
-const CardFull = ({ slug, apod }) =>
-  <CardWrapper>
-    <CardBody>
-      <StyledImage src={apod.url} />
-      <CardFullDetails apod={apod} />
-      <SharingButtons slug={slug} title={apod.title} />
-    </CardBody>
-  </CardWrapper>
+const CardFull = ({ slug, apod }) => {
+  const { imageSize, dominantColor, url, title } = apod
+  const imageRatio = (imageSize.height / imageSize.width) * 100
+
+  return (
+    <CardWrapper>
+      <CardBody style={{ width: '100%', maxWidth: imageSize.width }}>
+        <ImageWrapper
+          style={{
+            paddingTop: `${imageRatio}%`,
+            backgroundColor: dominantColor,
+          }}
+        >
+          <StyledImage src={url} />
+        </ImageWrapper>
+        <CardFullDetails apod={apod} />
+        <SharingButtons slug={slug} title={title} />
+      </CardBody>
+    </CardWrapper>
+  )
+}
 
 CardFull.propTypes = {
   slug: PropTypes.string.isRequired,
@@ -51,6 +75,11 @@ CardFull.propTypes = {
     copyright: PropTypes.string,
     explanation: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
+    imageSize: PropTypes.shape({
+      height: PropTypes.number.isRequired,
+      width: PropTypes.number.isRequired,
+    }),
+    dominantColor: PropTypes.string.isRequired,
   }),
 }
 
