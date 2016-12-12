@@ -3,15 +3,16 @@
 const request = require('request')
 const gm = require('gm')
 const path = require('path')
+const exec = require('child_process').exec
+const fs = require('fs')
 
 const THUMB_QUALITY = 70
 const THUMB_WIDTH = 600
 
-const destinationPath = path.resolve(__dirname, '../../tmp')
-const exec = require('child_process').exec
+const destinationDir = path.resolve(__dirname, '../../public/thumbs')
 
 const imagePath = slug =>
-  `${destinationPath}/${slug}.jpg`
+  `${destinationDir}/${slug}.jpg`
 
 const dominantColor = slug =>
   new Promise((resolve) => {
@@ -26,6 +27,10 @@ const dominantColor = slug =>
 
 const saveThumb = (gmThumb, slug) =>
   new Promise((resolve, reject) => {
+    if (!fs.existsSync(destinationDir)) {
+      fs.mkdirSync(destinationDir)
+    }
+
     gmThumb
       .resize(THUMB_WIDTH)
       .quality(THUMB_QUALITY)

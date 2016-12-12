@@ -4,7 +4,7 @@ const db = require('./db')
 const buildApod = require('./modules/buildApod')
 const saveApod = require('./modules/saveApod')
 
-const APODS_COUNT_TO_FETCH = 4
+const apodsCountToFetch = Number(process.argv[2]) || 4
 
 db.initialize()
 
@@ -17,7 +17,7 @@ const fetchAndSaveApod = (i) => {
 }
 
 const promises = []
-for (let i = 0; i <= APODS_COUNT_TO_FETCH; i += 1) {
+for (let i = 0; i < apodsCountToFetch; i += 1) {
   promises.push(fetchAndSaveApod(i))
 }
 
