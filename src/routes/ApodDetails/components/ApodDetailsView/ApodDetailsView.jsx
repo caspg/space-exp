@@ -11,11 +11,15 @@ import {
 const ApodDetailsView = props => (
   <DetailsContainer>
     <Wrapper>
-      <Image src={props.apod.url} />
       <DetailsWrapper>
+        <Image src={props.apod.url} />
         <Details apod={props.apod} slug={props.slug} />
       </DetailsWrapper>
     </Wrapper>
+
+    <footer style={{ marginTop: 100, color: '#ddd' }}>
+      created by Kacper | twitier | about | elo
+    </footer>
   </DetailsContainer>
 )
 

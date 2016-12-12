@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 
 import { fetchApods } from 'utils/api'
-import FeedView from '../components/FeedView'
+import Card from './components/Card'
 
 class FeedContainer extends Component {
   static fetchData() {
@@ -25,7 +25,15 @@ class FeedContainer extends Component {
   }
 
   render() {
-    return <FeedView apods={this.state.apods} />
+    const cards = this.state.apods.map((apod, i) =>
+      <Card key={i} apod={apod} />,
+    )
+
+    return (
+      <div style={{ textAlign: 'center' }}>
+        {cards}
+      </div>
+    )
   }
 }
 

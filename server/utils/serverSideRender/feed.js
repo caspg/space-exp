@@ -1,4 +1,4 @@
-const FeedContainer = require('routes/Feed/containers/FeedContainer').default
+const FeedContainer = require('routes/Feed/FeedContainer').default
 const matchRoute = require('./matchRoute')
 const sendHtmlString = require('./sendHtmlString')
 

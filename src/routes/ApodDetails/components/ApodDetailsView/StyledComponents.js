@@ -18,8 +18,10 @@ export const Image = styled.img`
 `
 
 export const DetailsWrapper = styled.div`
-  background-color: ${colors.grey300};
-  padding-top: 80px;
   padding-bottom: 50px;
   margin-top: -10px;
+
+  border-radius: 5px;
+  background-color: ${colors.grey200};
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 `
