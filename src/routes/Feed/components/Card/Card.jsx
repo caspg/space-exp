@@ -27,15 +27,22 @@ const Image = styled.img`
   height: auto;
 `
 
-const Card = props => (
+const Card = ({ apod }) => (
   <CardWrapper>
     <CardBody>
-      <StyledLink to={`/${props.apod.slug}`}>
-        <Image src={`/thumbs/${props.apod.slug}.jpg`} />
+      <StyledLink to={`/${apod.slug}`}>
+        <div
+          style={{
+            height: apod.thumbSize.height,
+            backgroundColor: apod.dominantColor,
+          }}
+        >
+          <Image src={`/thumbs/${apod.slug}.jpg`} />
+        </div>
 
         <CardDetails
-          title={props.apod.title}
-          explanation={props.apod.explanation}
+          title={apod.title}
+          explanation={apod.explanation}
         />
       </StyledLink>
     </CardBody>
@@ -48,6 +55,10 @@ Card.propTypes = {
     url: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     explanation: PropTypes.string.isRequired,
+    thumbSize: PropTypes.shape({
+      height: PropTypes.number.isRequired,
+    }),
+    dominantColor: PropTypes.string.isRequired,
   }),
 }
 

@@ -6,7 +6,6 @@ import truncate from 'utils/truncate'
 
 const StyledDiv = styled.div`
   margin: 0 auto;
-  margin-top: -10px;
   padding: 20px;
   max-width: 450px;
   background-color: ${colors.grey200};
