@@ -2,8 +2,11 @@ import colors from './constants/colors'
 
 const globalStyle = `
   body {
-    background-color: ${colors.spaceGrey};
     padding-bottom: 100px;
+
+    background: url('/cover.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: ${colors.spaceBlue};
   }
 
   html * {
