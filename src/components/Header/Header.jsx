@@ -13,24 +13,33 @@ const HeaderContent = styled.header`
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.8);
   height: ${constants.headerHeight}px;
   padding: 0 20px;
+  overflow: hidden;
 `
 
 const StyledLogo = styled(Logo)`
   display: inline-block;
-  height: 35px;
+  height: ${constants.logoHeight}px;
   line-height: ${constants.headerHeight}px;
   vertical-align: middle;
-  margin-top: -8px;
+  padding: ${(constants.headerHeight - constants.logoHeight) / 2}px 0;
+
+  @media (min-width: ${constants.mobileMediaQuery}px) {
+    margin-top: -8px;
+  }
 `
 
 const Title = styled.h1`
   margin: 0;
   margin-left: 15px;
-  display: inline-block;
   text-transform: uppercase;
   font-size: 1.5em;
   line-height: ${constants.headerHeight}px;
   color: black;
+  display: none;
+
+  @media (min-width: ${constants.mobileMediaQuery}px) {
+    display: inline-block;
+  }
 `
 
 const Header = () => (

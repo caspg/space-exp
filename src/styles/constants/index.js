@@ -1,4 +1,5 @@
 export default {
+  logoHeight: 40,
   headerHeight: 60,
   cardWidth: 600,
 
