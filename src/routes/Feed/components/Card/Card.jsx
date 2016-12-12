@@ -3,7 +3,9 @@ import styled from 'styled-components'
 
 import colors from 'styles/constants/colors'
 import constants from 'styles/constants'
+
 import StyledLink from 'components/StyledLink'
+import StyledImage from 'components/StyledImage'
 import CardDetails from '../CardDetails'
 
 const CardWrapper = styled.div`
@@ -22,32 +24,29 @@ const CardBody = styled.div`
   box-shadow: ${constants.boxShadow};
 `
 
-const Image = styled.img`
-  width: 100%;
-  height: auto;
-`
+const Card = ({ apod }) => {
+  const { thumbSize, dominantColor, title, explanation } = apod
+  const imageRatio = (thumbSize.height / thumbSize.width) * 100
 
-const Card = ({ apod }) => (
-  <CardWrapper>
-    <CardBody>
-      <StyledLink to={`/${apod.slug}`}>
-        <div
-          style={{
-            height: apod.thumbSize.height,
-            backgroundColor: apod.dominantColor,
-          }}
-        >
-          <Image src={`/thumbs/${apod.slug}.jpg`} />
-        </div>
+  return (
+    <CardWrapper>
+      <CardBody>
+        <StyledLink to={`/${apod.slug}`}>
+          <StyledImage
+            src={`/thumbs/${apod.slug}.jpg`}
+            imageRatio={imageRatio}
+            dominantColor={dominantColor}
+          />
 
-        <CardDetails
-          title={apod.title}
-          explanation={apod.explanation}
-        />
-      </StyledLink>
-    </CardBody>
-  </CardWrapper>
-)
+          <CardDetails
+            title={title}
+            explanation={explanation}
+          />
+        </StyledLink>
+      </CardBody>
+    </CardWrapper>
+  )
+}
 
 Card.propTypes = {
   apod: PropTypes.shape({

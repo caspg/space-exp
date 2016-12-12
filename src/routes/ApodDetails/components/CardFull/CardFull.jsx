@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import constants from 'styles/constants'
 import colors from 'styles/constants/colors'
 
+import StyledImage from 'components/StyledImage'
 import CardFullDetails from '../CardFullDetails'
 import SharingButtons from '../SharingButtons'
 
@@ -31,21 +32,6 @@ const CardBody = styled.div`
   }
 `
 
-const ImageWrapper = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  height: 0;
-  position: relative;
-`
-
-const StyledImage = styled.img`
-  max-width:100%;
-  max-height:100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-`
-
 const CardFull = ({ slug, apod }) => {
   const { imageSize, dominantColor, url, title } = apod
   const imageRatio = (imageSize.height / imageSize.width) * 100
@@ -53,14 +39,11 @@ const CardFull = ({ slug, apod }) => {
   return (
     <CardWrapper>
       <CardBody style={{ width: '100%', maxWidth: imageSize.width }}>
-        <ImageWrapper
-          style={{
-            paddingTop: `${imageRatio}%`,
-            backgroundColor: dominantColor,
-          }}
-        >
-          <StyledImage src={url} />
-        </ImageWrapper>
+        <StyledImage
+          src={url}
+          imageRatio={imageRatio}
+          dominantColor={dominantColor}
+        />
         <CardFullDetails apod={apod} />
         <SharingButtons slug={slug} title={title} />
       </CardBody>
