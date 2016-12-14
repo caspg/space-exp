@@ -7,7 +7,7 @@ const handleOnEnter = (nextState) => {
   }
 }
 
-export default () => ({
+export default {
   path: '/:slug',
   onEnter: handleOnEnter,
   getComponent: (nextState, cb) => {
@@ -17,4 +17,4 @@ export default () => ({
       cb(null, ApodDetailsContainer)
     }, 'apod-details');
   },
-})
+}
