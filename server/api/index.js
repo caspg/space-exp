@@ -12,7 +12,7 @@ const fetchApods = (callback) => {
 }
 
 apiRouter.get('/apods', (req, res) => {
-  fetchApods(json => res.json(json.slice(0, 5)))
+  fetchApods(json => res.json(json.slice(0, 10)))
 })
 
 apiRouter.get('/apods/:slug', (req, res) => {

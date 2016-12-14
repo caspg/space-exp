@@ -5,6 +5,7 @@ import { Link } from 'react-router'
 
 import constants from 'styles/constants'
 
+import StyledLink from 'components/StyledLink'
 import Logo from '../Logo'
 
 const HeaderContent = styled.header`
@@ -14,6 +15,7 @@ const HeaderContent = styled.header`
   height: ${constants.headerHeight}px;
   padding: 0 20px;
   overflow: hidden;
+  text-align: center;
 `
 
 const StyledLogo = styled(Logo)`
@@ -31,7 +33,6 @@ const StyledLogo = styled(Logo)`
 const Title = styled.h1`
   margin: 0;
   margin-left: 15px;
-  text-transform: uppercase;
   font-size: 1.5em;
   line-height: ${constants.headerHeight}px;
   color: black;
@@ -42,15 +43,24 @@ const Title = styled.h1`
   }
 `
 
+const AboutLink = styled(StyledLink)`
+  margin-left: 20px;
+  line-height: ${constants.headerHeight}px;
+`
+
 const Header = () => (
   <Headroom>
     <HeaderContent>
       <Link to="/">
         <StyledLogo />
         <Title>
-          space experience
+          SPACE EXPERIENCE
         </Title>
       </Link>
+
+      <AboutLink to="/about">
+        ABOUT
+      </AboutLink>
     </HeaderContent>
   </Headroom>
 )
