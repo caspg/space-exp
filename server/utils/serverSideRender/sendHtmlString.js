@@ -1,15 +1,9 @@
 const React = require('react')
 const renderToString = require('react-dom/server').renderToString
 const { RouterContext } = require('react-router')
-const styleSheet = require('styled-components/lib/models/StyleSheet')
 
 const renderHtml = require('./renderHtml')
-const globalStyle = require('styles/global').default
-
-const getStyles = () => {
-  const styles = styleSheet.rules().map(rule => rule.cssText).join('\n')
-  return globalStyle.concat(' ', styles)
-}
+const makeStyles = require('./makeStyles')
 
 const sendHtmlString = (res, renderProps, data) => {
   const handleCreateElement = (Component, props) =>
@@ -24,7 +18,7 @@ const sendHtmlString = (res, renderProps, data) => {
 
   const bootData = JSON.stringify(data)
 
-  res.send(renderHtml({ content, styles: getStyles(), bootData }))
+  res.send(renderHtml({ content, styles: makeStyles(), bootData }))
 }
 
 module.exports = sendHtmlString

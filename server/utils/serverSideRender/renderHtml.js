@@ -19,7 +19,6 @@ module.exports = ({ content, styles, bootData }) => `
   </head>
   <body>
     <div id="app">${content}</div>
-    <div id="dupa"></div>
 
     <script>
      window.BOOT_DATA = ${bootData};
