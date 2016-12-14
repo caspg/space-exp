@@ -10,6 +10,7 @@ export default {
   getIndexRoute: feedRoute,
   childRoutes: [
     aboutRoute,
+
     apodDetailsRoute, // this guy needs to be last
   ],
 }
