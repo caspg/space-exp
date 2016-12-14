@@ -15,7 +15,6 @@
     "babel-plugin-module-resolver": "^2.3.0",
     "babel-preset-airbnb": "^2.1.1",
     "babel-register": "^6.18.0",
-    "ejs": "^2.5.2",
     "express": "^4.14.0",
     "gm": "^1.23.0",
     "isomorphic-fetch": "^2.2.1",
