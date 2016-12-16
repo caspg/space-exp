@@ -5,7 +5,8 @@ module.exports = ({ content, styles, bootData }) => `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Space Experience</title>
+    <meta name='description' content='Space Experience - Astronomy Picture of the Day - brings you each day a stunning picture of our universe. Pictures and explanations are provided by apod.nasa.gov.'/>
+    <title>Space Experience - Astronomy Picture of the Day</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
