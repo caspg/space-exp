@@ -12,7 +12,8 @@ const DetailsWrapper = styled.div`
 `
 
 export const Title = styled.h2`
-  font-size: 1.3em;
+  font-size: 1.6em;
+  line-height: 1.2em;
   font-weight: 900;
 `
 
@@ -22,12 +23,12 @@ export const Date = styled.p`
 `
 
 export const Explanation = styled.p`
-  font-weight: 300;
-  text-align: justify;
+  text-align: left;
   padding: 2.5em 0;
   margin-top: 2em;
   border-top: 1px solid ${colors.grey400};
   border-bottom: 1px solid ${colors.grey400};
+  color: ${colors.black444};
 `
 
 const CardFullDetails = ({ apod }) => (

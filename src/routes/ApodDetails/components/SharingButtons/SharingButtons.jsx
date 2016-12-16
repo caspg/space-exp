@@ -18,7 +18,7 @@ const SharingButtons = ({ slug, title }) => {
 
   return (
     <Container>
-      <h4>Share your space experience with your friends.</h4>
+      <p>Share your space experience with your friends.</p>
 
       <div>
         <Facebook url={url} />

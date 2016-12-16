@@ -7,13 +7,14 @@ import truncate from 'utils/truncate'
 const StyledDiv = styled.div`
   margin: 0 auto;
   padding: 20px;
-  max-width: 450px;
+  max-width: 470px;
   background-color: ${colors.grey200};
   text-align: left;
 `
 
 export const Title = styled.h2`
-  font-size: 1.3em;
+  font-size: 1.6em;
+  line-height: 1.2em;
   font-weight: 900;
   margin-bottom: 1em;
   padding-bottom: 1em;
@@ -22,8 +23,8 @@ export const Title = styled.h2`
 `
 
 export const Explanation = styled.p`
-  font-weight: 300;
-  text-align: justify;
+  text-align: left;
+  color: ${colors.black444};
 `
 
 const CardDetails = props =>

@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react'
 
-import ApodFooter from './components/ApodFooter'
+import Footer from 'components/Footer'
 import CardFull from './components/CardFull'
 
 const ApodDetailsLayout = ({ slug, apod }) =>
   <div>
     <CardFull slug={slug} apod={apod} />
-    <ApodFooter />
+    <Footer />
   </div>
 
 ApodDetailsLayout.propTypes = {

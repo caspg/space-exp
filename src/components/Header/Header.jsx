@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router'
 
 import constants from 'styles/constants'
+import colors from 'styles/constants/colors'
 
 import StyledLink from 'components/StyledLink'
 import Logo from '../Logo'
@@ -35,7 +36,6 @@ const Title = styled.h1`
   margin-left: 15px;
   font-size: 1.5em;
   line-height: ${constants.headerHeight}px;
-  color: black;
   display: none;
 
   @media (min-width: ${constants.mobileMediaQuery}px) {
@@ -43,24 +43,41 @@ const Title = styled.h1`
   }
 `
 
-const AboutLink = styled(StyledLink)`
-  margin-left: 20px;
+const StyledHeaderLink = styled(Link)`
+  color: ${colors.black222};
+  margin-right: 30px;
+
+  &:hover {
+    color: ${colors.black222};
+  }
+
+  &:visited {
+    color: ${colors.black222};
+  }
+`
+
+const NavLink = styled(StyledLink)`
+  margin-left: 15px;
   line-height: ${constants.headerHeight}px;
 `
 
 const Header = () => (
   <Headroom>
     <HeaderContent>
-      <Link to="/">
+      <StyledHeaderLink to="/">
         <StyledLogo />
         <Title>
           SPACE EXPERIENCE
         </Title>
-      </Link>
+      </StyledHeaderLink>
 
-      <AboutLink to="/about">
+      <NavLink to="/">
+        FEED
+      </NavLink>
+
+      <NavLink to="/about">
         ABOUT
-      </AboutLink>
+      </NavLink>
     </HeaderContent>
   </Headroom>
 )

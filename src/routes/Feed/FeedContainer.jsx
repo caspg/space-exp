@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 
 import { fetchApods } from 'utils/api'
+import CardsWrapper from './components/CardsWrapper'
 import Card from './components/Card'
 
 class FeedContainer extends Component {
@@ -30,9 +31,9 @@ class FeedContainer extends Component {
     )
 
     return (
-      <div style={{ textAlign: 'center' }}>
+      <CardsWrapper>
         {cards}
-      </div>
+      </CardsWrapper>
     )
   }
 }

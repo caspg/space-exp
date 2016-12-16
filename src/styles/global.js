@@ -1,3 +1,4 @@
+import constants from './constants'
 import colors from './constants/colors'
 
 const globalStyle = `
@@ -7,12 +8,18 @@ const globalStyle = `
     background: url('/cover.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: ${colors.spaceBlue};
-  }
 
-  html * {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 1.5em;
+    color: ${colors.black222};
+    font-size: 16px;
+  }
+
+  @media (min-width: ${constants.mobileMediaQuery}px) {
+    body {
+      font-size: 18px;
+    }
   }
 
   .react-sharing-button__link {

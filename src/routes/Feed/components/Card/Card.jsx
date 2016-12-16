@@ -19,7 +19,7 @@ const CardBody = styled.div`
   width: 100%;
   max-width: ${constants.cardWidth}px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-bottom: 100px;
   background-color: ${colors.grey200};
   box-shadow: ${constants.boxShadow};
 `

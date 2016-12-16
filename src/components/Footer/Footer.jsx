@@ -7,9 +7,9 @@ const StyledFooter = styled.footer`
   text-align: center;
 `
 
-const ApodFooter = () =>
+const Footer = () =>
   <StyledFooter>
     created by Kacper | yolo | about | elo
   </StyledFooter>
 
-export default ApodFooter
+export default Footer
