@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
@@ -28,5 +29,11 @@ module.exports = {
       react: path.resolve(__dirname, '../../node_modules', 'react'),
     },
   },
-  plugins: [],
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        PORT: JSON.stringify(process.env.PORT || 3000),
+      },
+    }),
+  ],
 }

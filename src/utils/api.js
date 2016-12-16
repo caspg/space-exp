@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch'
 
-const BASE_URI = 'http://localhost:3000/api'
+const BASE_URI = `http://localhost:${process.env.PORT}/api`
 
 const checkStatus = (response) => {
   if (response.status >= 200 && response.status < 300) {
