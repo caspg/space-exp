@@ -27,11 +27,12 @@ const CardBody = styled.div`
 const Card = ({ apod }) => {
   const { thumbSize, dominantColor, title, explanation } = apod
   const imageRatio = (thumbSize.height / thumbSize.width) * 100
+  const CardLink = StyledLink()
 
   return (
     <CardWrapper>
       <CardBody>
-        <StyledLink to={`/${apod.slug}`}>
+        <CardLink to={`/${apod.slug}`}>
           <StyledImage
             src={`/thumbs/${apod.slug}.jpg`}
             imageRatio={imageRatio}
@@ -42,7 +43,7 @@ const Card = ({ apod }) => {
             title={title}
             explanation={explanation}
           />
-        </StyledLink>
+        </CardLink>
       </CardBody>
     </CardWrapper>
   )

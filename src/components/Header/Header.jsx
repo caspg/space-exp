@@ -56,7 +56,7 @@ const StyledHeaderLink = styled(Link)`
   }
 `
 
-const NavLink = styled(StyledLink)`
+const NavLink = styled(StyledLink())`
   margin-left: 15px;
   line-height: ${constants.headerHeight}px;
 `

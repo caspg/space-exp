@@ -3,17 +3,18 @@ import styled from 'styled-components'
 
 import colors from 'styles/constants/colors'
 
-const StyledLink = styled(Link)`
-  color: ${colors.black};
-  text-decoration: none;
+const StyledLink = (color = colors.black222) =>
+  styled(Link)`
+    color: ${color};
+    text-decoration: none;
 
-  &:hover {
-    color: ${colors.black};
-  }
+    &:hover {
+      color: ${color};
+    }
 
-  &:visited {
-    color: ${colors.black};
-  }
-`
+    &:visited {
+      color: ${color};
+    }
+  `
 
 export default StyledLink
