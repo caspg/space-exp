@@ -1,15 +1,10 @@
-if (typeof require.ensure !== 'function') require.ensure = (d, c) => { c(require) }
+import scrollToTop from 'utils/scrollToTop'
 
-const handleOnEnter = (nextState) => {
-  const { location } = nextState
-  if (location.action === 'PUSH' && location.pathname !== '/') {
-    window.scrollTo(0, 0)
-  }
-}
+if (typeof require.ensure !== 'function') require.ensure = (d, c) => { c(require) }
 
 export default {
   path: '/:slug',
-  onEnter: handleOnEnter,
+  onEnter: scrollToTop,
   getComponent: (nextState, cb) => {
     require.ensure([], (require) => {
       const ApodDetailsContainer = require('./ApodDetailsContainer').default
