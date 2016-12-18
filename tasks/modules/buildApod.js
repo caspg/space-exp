@@ -19,14 +19,27 @@ const mergeImageData = apodData =>
   )
 
 const buildApod = date =>
-  new Promise((resolve) => {
+  new Promise((resolve, reject) => {
+    const checkMediaType = (apodData) => {
+      if (apodData.media_type !== 'image') {
+        reject(`${apodData.date}: media type is not image`)
+        return null
+      }
+
+      return apodData
+    }
+
     fetchApod(date)
+      .then(checkMediaType)
       .then(mergeSlug)
       .then(mergeImageData)
       .then((apodData) => {
         resolve(
           new Apod(apodData)
         )
+      })
+      .catch((err) => {
+        reject(err)
       })
   })
 

@@ -16,7 +16,9 @@ const fetchData = (date) => {
 
   return fetch(fullUri).then((res) => {
     if (res.status !== 200) {
-      console.log(JSON.stringify(res))
+      throw new Error(
+        console.log(JSON.stringify(res))
+      )
     }
 
     return res.json()

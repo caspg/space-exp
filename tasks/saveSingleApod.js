@@ -10,5 +10,10 @@ db.initialize()
 
 buildApod(today)
   .then(saveApod)
-  .then(() => db.disconnect())
-  .catch(err => console.log(err))
+  .then(() => {
+    db.disconnect()
+  })
+  .catch((err) => {
+    db.disconnect()
+    console.log(err)
+  })
