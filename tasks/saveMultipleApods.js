@@ -8,13 +8,17 @@ const apodsCountToFetch = Number(process.argv[2]) || 4
 
 db.initialize()
 
-const fetchAndSaveApod = (i) => {
-  const date = moment().subtract(i, 'days').format('YYYY-MM-DD')
+const fetchAndSaveApod = i =>
+  new Promise((resolve) => {
+    const date = moment().subtract(i, 'days').format('YYYY-MM-DD')
 
-  return buildApod(date)
-    .then(saveApod)
-    .catch(err => console.log(err))
-}
+    setTimeout(() => {
+      buildApod(date)
+        .then(saveApod)
+        .then(resolve)
+        .catch(err => console.log(err))
+    }, 800 * i)
+  })
 
 const promises = []
 for (let i = 0; i < apodsCountToFetch; i += 1) {
