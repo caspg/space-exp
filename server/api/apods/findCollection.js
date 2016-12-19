@@ -1,6 +1,7 @@
 const moment = require('moment')
 
 const Apod = require('../../db/schema/apod')
+const { handleError } = require('./base')
 
 const PER_PAGE = 10
 
@@ -27,15 +28,9 @@ const findCollection = (req, res) => {
     })
   }
 
-  const handleError = () => {
-    res.status(500).json({
-      message: 'There was some server error.',
-    })
-  }
-
   findApods(query)
     .then(handleSuccess)
-    .catch(handleError)
+    .catch(() => handleError(res))
 }
 
 module.exports = findCollection
