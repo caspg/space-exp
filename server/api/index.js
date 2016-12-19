@@ -1,5 +1,8 @@
 const express = require('express')
-const fs = require('fs');
+const fs = require('fs')
+const moment = require('moment')
+
+const Apod = require('../db/schema/apod')
 
 const apiRouter = express.Router()
 
@@ -12,7 +15,29 @@ const fetchApods = (callback) => {
 }
 
 apiRouter.get('/apods', (req, res) => {
-  fetchApods(json => res.json(json.slice(0, 10)))
+  const queryDate = req.query.date || moment().format('YYYY-MM-DD')
+  const query = { date: { $lte: queryDate } }
+  const perPage = 10
+
+  Apod
+    .find(query, '-_id -__v')
+    .sort({ date: -1 })
+    .limit(perPage + 1)
+    .then((apods) => {
+      const lastItem = apods.splice(perPage, 1)[0]
+      const nextDate = lastItem ? lastItem.date : null
+
+      res.json({
+        meta: {
+          nextDate,
+          currentSize: apods.length,
+        },
+        apods,
+      })
+    })
+    .catch(() => {
+      res.status(500).json({ message: 'some server error' })
+    })
 })
 
 apiRouter.get('/apods/:slug', (req, res) => {
