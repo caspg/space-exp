@@ -1,7 +1,7 @@
 const fetchApod = require('./fetchApod')
 const handleImage = require('./handleImage')
 const slugify = require('./slugify')
-const Apod = require('../db/schema/apod')
+const Apod = require('../../server/db/schema/apod')
 
 const mergeData = (...args) => Object.assign({}, ...args)
 

@@ -1,6 +1,6 @@
 const moment = require('moment')
 
-const db = require('./db')
+const db = require('../server/db')
 const buildApod = require('./modules/buildApod')
 const saveApod = require('./modules/saveApod')
 

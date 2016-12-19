@@ -1,7 +1,7 @@
 const fs = require('fs')
 
-const db = require('../db')
-const Apod = require('../db/schema/apod')
+const db = require('../../server/db')
+const Apod = require('../../server/db/schema/apod')
 
 db.initialize()
 

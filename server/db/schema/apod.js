@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const apodSchema = mongoose.Schema({
-  date: { type: String, unique: true },
+  date: { type: String, index: { unique: true } },
   slug: { type: String, index: { unique: true } },
   copyright: String,
   explanation: String,
