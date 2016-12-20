@@ -5,8 +5,8 @@ import CardsWrapper from './components/CardsWrapper'
 import Card from './components/Card'
 
 class FeedContainer extends Component {
-  static fetchData() {
-    return fetchApods()
+  static fetchData(date = '') {
+    return fetchApods(date)
   }
 
   constructor(props) {

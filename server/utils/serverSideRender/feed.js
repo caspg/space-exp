@@ -5,7 +5,12 @@ const sendHtmlString = require('./sendHtmlString')
 const renderFeed = (req, res) => {
   matchRoute(req, res, (renderProps) => {
     FeedContainer.fetchData().then((data) => {
-      sendHtmlString(res, renderProps, { apods: data })
+      const bootData = {
+        apods: data.apods,
+        apodsNextDate: data.meta.nextDate,
+      }
+
+      sendHtmlString(res, renderProps, bootData)
     })
   })
 }
