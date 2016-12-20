@@ -7,3 +7,5 @@ npm-debug.log
 tmp/*
 !tmp/.gitkeep
 tasks/apod-json/tmp
+
+ngrok
