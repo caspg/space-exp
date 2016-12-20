@@ -3,7 +3,7 @@ const matchRoute = require('./matchRoute')
 const sendHtmlString = require('./sendHtmlString')
 
 const meta = ({ title, explanation, url }) => ({
-  title,
+  title: `Space Experience - APOD - ${title}`,
   description: explanation,
   image: url,
 })
