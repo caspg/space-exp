@@ -21,6 +21,12 @@ module.exports = ({ content, styles, bootData }) => `
   <body>
     <div id="app">${content}</div>
 
+    <noscript>
+      <h3 style="color:#444;text-align:center;padding:20px;border: 1px solid #222;margin:30px;background:#eeeeee;">
+        JavaScript is required to enjoy this website fully :(.
+      </h3>
+    </noscript>
+
     <script>
      window.BOOT_DATA = ${bootData};
     </script>
