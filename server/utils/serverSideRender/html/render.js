@@ -1,4 +1,6 @@
-module.exports = ({ content, styles, bootData, meta }) => `
+const defaultMeta = require('./defaultMeta')
+
+module.exports = ({ content, styles, bootData, meta = defaultMeta }) => `
   <!DOCTYPE html>
   <html lang="en">
   <head>
