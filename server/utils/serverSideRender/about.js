@@ -3,7 +3,7 @@ const renderToString = require('react-dom/server').renderToString
 const { RouterContext } = require('react-router')
 
 const matchRoute = require('./matchRoute')
-const renderHtml = require('./renderHtml')
+const renderHtml = require('./html/render')
 const makeStyles = require('./makeStyles')
 
 const renderAbout = (req, res) => {

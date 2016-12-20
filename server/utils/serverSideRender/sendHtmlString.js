@@ -2,10 +2,11 @@ const React = require('react')
 const renderToString = require('react-dom/server').renderToString
 const { RouterContext } = require('react-router')
 
-const renderHtml = require('./renderHtml')
+const renderHtml = require('./html/render')
+const defaultMeta = require('./html/defaultMeta')
 const makeStyles = require('./makeStyles')
 
-const sendHtmlString = (res, renderProps, data) => {
+const sendHtmlString = (res, renderProps, data, meta = defaultMeta) => {
   const handleCreateElement = (Component, props) =>
     React.createElement(Component, { ...props, data })
 
@@ -18,7 +19,7 @@ const sendHtmlString = (res, renderProps, data) => {
 
   const bootData = JSON.stringify(data)
 
-  res.send(renderHtml({ content, styles: makeStyles(), bootData }))
+  res.send(renderHtml({ content, styles: makeStyles(), bootData, meta }))
 }
 
 module.exports = sendHtmlString
