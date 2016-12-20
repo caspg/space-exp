@@ -10,7 +10,7 @@ const Copyright = ({ copyright }) => {
     return null
   }
 
-  return <StyledParagraph>{copyright}</StyledParagraph>
+  return <StyledParagraph>Copyright: {copyright}</StyledParagraph>
 }
 
 Copyright.propTypes = {

@@ -25,7 +25,7 @@ const CardBody = styled.div`
 `
 
 const Card = ({ apod }) => {
-  const { thumbSize, dominantColor, title, explanation } = apod
+  const { thumbSize, dominantColor, title, explanation, date } = apod
   const imageRatio = (thumbSize.height / thumbSize.width) * 100
   const CardLink = StyledLink()
 
@@ -40,6 +40,7 @@ const Card = ({ apod }) => {
           />
 
           <CardDetails
+            date={date}
             title={title}
             explanation={explanation}
           />

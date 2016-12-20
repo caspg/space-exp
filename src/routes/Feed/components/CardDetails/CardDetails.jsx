@@ -16,22 +16,25 @@ export const Title = styled.h2`
   font-size: 1.6em;
   line-height: 1.2em;
   font-weight: 900;
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid ${colors.grey400};
   text-decoration: none !important;
+`
+
+export const Date = styled.p`
+  font-weight: 900;
+  font-size: 0.8em;
 `
 
 export const Explanation = styled.p`
   text-align: left;
   color: ${colors.black444};
+  padding-top: 1em;
+  border-top: 1px solid ${colors.grey400};
 `
 
 const CardDetails = props =>
   <StyledDiv>
-    <Title>
-      {props.title}
-    </Title>
+    <Title>{props.title}</Title>
+    <Date>{props.date}</Date>
     <Explanation>
       {truncate(props.explanation, 140)}
     </Explanation>
@@ -40,6 +43,7 @@ const CardDetails = props =>
 CardDetails.propTypes = {
   title: PropTypes.string.isRequired,
   explanation: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
 }
 
 export default CardDetails
