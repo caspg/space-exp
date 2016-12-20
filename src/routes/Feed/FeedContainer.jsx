@@ -14,15 +14,31 @@ class FeedContainer extends Component {
 
     this.state = {
       apods: props.data.apods || [],
+      nextDate: props.data.apodsNextDate || '',
+      isNextPageLoading: false,
     }
+
+    this.handleFetchingData = this.handleFetchingData.bind(this)
   }
 
   componentDidMount() {
     if (!this.state.data || this.state.data.length === 0) {
-      FeedContainer.fetchData().then((apods) => {
-        this.setState({ apods })
-      })
+      this.handleFetchingData()
     }
+  }
+
+  handleFetchingData() {
+    const { nextDate, apods } = this.state
+
+    this.setState({ isNextPageLoading: true })
+
+    FeedContainer.fetchData(nextDate).then((apodsData) => {
+      this.setState({
+        apods: apods.concat(apodsData.apods),
+        nextDate: apodsData.meta.nextDate,
+        isNextPageLoading: false,
+      })
+    })
   }
 
   render() {
@@ -41,6 +57,7 @@ class FeedContainer extends Component {
 FeedContainer.propTypes = {
   data: PropTypes.shape({
     apods: PropTypes.arrayOf(PropTypes.object),
+    apodsNextDate: PropTypes.string,
   }),
 }
 
