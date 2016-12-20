@@ -32,18 +32,25 @@ const CardBody = styled.div`
   }
 `
 
+const ImageLink = styled.a`
+`
+
 const CardFull = ({ slug, apod }) => {
   const { imageSize, dominantColor, url, title } = apod
   const imageRatio = (imageSize.height / imageSize.width) * 100
 
+  const httpsUrl = url.replace(/^(http)/, 'https')
+
   return (
     <CardWrapper>
       <CardBody style={{ width: '100%', maxWidth: imageSize.width }}>
-        <StyledImage
-          src={url}
-          imageRatio={imageRatio}
-          dominantColor={dominantColor}
-        />
+        <ImageLink href={apod.hdurl} target="_blank">
+          <StyledImage
+            src={httpsUrl}
+            imageRatio={imageRatio}
+            dominantColor={dominantColor}
+          />
+        </ImageLink>
         <CardFullDetails apod={apod} />
         <SharingButtons slug={slug} title={title} />
       </CardBody>
