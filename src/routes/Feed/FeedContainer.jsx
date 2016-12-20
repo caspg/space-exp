@@ -18,11 +18,29 @@ class FeedContainer extends Component {
       isNextPageLoading: false,
     }
 
-    this.handleFetchingData = this.handleFetchingData.bind(this)
+    this.handleScroll = this.handleScroll.bind(this)
   }
 
   componentDidMount() {
-    if (!this.state.data || this.state.data.length === 0) {
+    if (!this.state.apods || this.state.apods.length === 0) {
+      this.handleFetchingData()
+    }
+
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll() {
+    const bottomOffset = 600
+    const currentPosition = window.innerHeight + window.scrollY + bottomOffset
+    const scrolledToBottom = currentPosition >= document.body.offsetHeight
+    const { isNextPageLoading } = this.state
+
+    if (scrolledToBottom && !isNextPageLoading) {
+      this.setState({ isNextPageLoading: true })
       this.handleFetchingData()
     }
   }
