@@ -8,13 +8,13 @@ class ApodDetailsContainer extends Component {
     return fetchApodDetails(slug)
   }
 
-  static handleInitialData({ data, params }) {
-    const { apods, apodDetails } = data
+  static handleInitialData({ apods, data, params }) {
+    const { apodDetails } = data
     const { slug } = params
 
     if (apodDetails && apodDetails.slug === slug) {
       return apodDetails
-    } else if (apods && apods.lenght > 0) {
+    } else if (apods && apods.length > 0) {
       return apods.filter(a => a.slug === slug)[0]
     }
 
@@ -47,7 +47,6 @@ class ApodDetailsContainer extends Component {
     )
   }
 }
-
 
 ApodDetailsContainer.propTypes = {
   data: PropTypes.shape({ // eslint-disable-line react/no-unused-prop-types

@@ -9,8 +9,8 @@ class AppContainer extends Component {
     const { data } = this.props
 
     this.state = {
-      apods: data ? data.apods : [],
-      apodsNextDate: data ? data.apodsNextDate : '',
+      apods: data ? (data.apods || []) : [],
+      apodsNextDate: data ? (data.apodsNextDate || '') : '',
     }
 
     this.handleNewApodsData = this.handleNewApodsData.bind(this)
