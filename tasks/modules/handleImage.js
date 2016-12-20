@@ -6,8 +6,8 @@ const path = require('path')
 const exec = require('child_process').exec
 const fs = require('fs')
 
-const THUMB_QUALITY = 70
-const THUMB_WIDTH = 600
+const THUMB_QUALITY = 65
+const THUMB_WIDTH = 550
 
 const destinationDir = path.resolve(__dirname, '../../public/thumbs')
 
