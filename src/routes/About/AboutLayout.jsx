@@ -50,6 +50,12 @@ const Anchor = styled.a`
 
 const StyledLogo = styled(Logo)`
   opacity: 0.6;
+  margin-bottom: 50px;
+  width: 100px;
+`
+
+const Acknowledgement = styled.div`
+  font-size: 0.8em;
 `
 
 const AboutLayout = () =>
@@ -80,6 +86,14 @@ const AboutLayout = () =>
       </Paragraph>
 
       <StyledLogo />
+
+      <Acknowledgement>
+        <Paragraph>
+          Logo made by <Anchor href="http://www.freepik.com">Freepik</Anchor> from <Anchor href="http://www.flaticon.com">flaticon.com</Anchor>
+          <br/>
+          Background image by <Anchor href="https://unsplash.com/@sveninho">unsplash.com/@sveninho</Anchor>
+        </Paragraph>
+      </Acknowledgement>
     </AboutBody>
 
     <Footer />
