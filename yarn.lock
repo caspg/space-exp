@@ -952,10 +952,6 @@ circular-json@^0.3.0:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/circular-json/-/circular-json-0.3.1.tgz#be8b36aefccde8b3ca7aa2d6afc07a37242c0d2d"
 
-classnames@^2.2.3:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
-
 cli-color@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/cli-color/-/cli-color-1.1.0.tgz#de188cdc4929d83b67aea04110fbed40fdbf6775"
@@ -1276,10 +1272,6 @@ doctrine@1.5.0, doctrine@^1.2.2:
   dependencies:
     esutils "^2.0.2"
     isarray "^1.0.0"
-
-dom-helpers@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-2.4.0.tgz#9bb4b245f637367b1fa670274272aa28fe06c367"
 
 domain-browser@^1.1.1:
   version "1.1.7"
@@ -3233,10 +3225,6 @@ react:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
 
-react-addons-shallow-compare@^15.4.1:
-  version "15.4.1"
-  resolved "https://registry.yarnpkg.com/react-addons-shallow-compare/-/react-addons-shallow-compare-15.4.1.tgz#b68103dd4d13144cb221065f6021de1822bd435a"
-
 react-dom:
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.4.1.tgz#d54c913261aaedb17adc20410d029dcc18a1344a"
@@ -3265,14 +3253,6 @@ react-router:
 react-sharingbuttons@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/react-sharingbuttons/-/react-sharingbuttons-0.1.0.tgz#05f1b1dd3bd07fa3c767cd024d1c3f07025faced"
-
-react-virtualized@^8.8.1:
-  version "8.8.1"
-  resolved "https://registry.yarnpkg.com/react-virtualized/-/react-virtualized-8.8.1.tgz#d12aad7f759ddc158f98ab60981290501b9ce95e"
-  dependencies:
-    babel-runtime "^6.11.6"
-    classnames "^2.2.3"
-    dom-helpers "^2.4.0"
 
 read-all-stream@^3.0.0:
   version "3.1.0"
