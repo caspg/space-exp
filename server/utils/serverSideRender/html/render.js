@@ -13,6 +13,8 @@ module.exports = ({ content, styles, bootData, meta }) => `
     <meta name="twitter:description" content="${meta.description}">
     <meta name="twitter:image" content="${meta.image}">
 
+    <meta name="og:image" content="${meta.image}">
+
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
