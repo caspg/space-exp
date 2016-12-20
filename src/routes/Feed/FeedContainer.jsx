@@ -13,8 +13,6 @@ class FeedContainer extends Component {
     super(props)
 
     this.state = {
-      apods: props.data.apods || [],
-      nextDate: props.data.apodsNextDate || '',
       isNextPageLoading: false,
     }
 
@@ -22,7 +20,9 @@ class FeedContainer extends Component {
   }
 
   componentDidMount() {
-    if (!this.state.apods || this.state.apods.length === 0) {
+    const { apods } = this.props
+
+    if (!apods || apods.length === 0) {
       this.handleFetchingData()
     }
 
@@ -46,21 +46,18 @@ class FeedContainer extends Component {
   }
 
   handleFetchingData() {
-    const { nextDate, apods } = this.state
+    const { apodsNextDate, onNewApodsData } = this.props
 
     this.setState({ isNextPageLoading: true })
 
-    FeedContainer.fetchData(nextDate).then((apodsData) => {
-      this.setState({
-        apods: apods.concat(apodsData.apods),
-        nextDate: apodsData.meta.nextDate,
-        isNextPageLoading: false,
-      })
+    FeedContainer.fetchData(apodsNextDate).then((apodsData) => {
+      this.setState({ isNextPageLoading: false })
+      onNewApodsData(apodsData)
     })
   }
 
   render() {
-    const cards = this.state.apods.map((apod, i) =>
+    const cards = this.props.apods.map((apod, i) =>
       <Card key={i} apod={apod} />,
     )
 
@@ -73,10 +70,9 @@ class FeedContainer extends Component {
 }
 
 FeedContainer.propTypes = {
-  data: PropTypes.shape({
-    apods: PropTypes.arrayOf(PropTypes.object),
-    apodsNextDate: PropTypes.string,
-  }),
+  apods: PropTypes.arrayOf(PropTypes.object),
+  apodsNextDate: PropTypes.string,
+  onNewApodsData: PropTypes.func,
 }
 
 export default FeedContainer

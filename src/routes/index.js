@@ -1,4 +1,4 @@
-import AppView from 'components/AppView'
+import AppContainer from 'containers/AppContainer'
 
 import scrollToTop from 'utils/scrollToTop'
 import feedRoute from './Feed'
@@ -7,7 +7,7 @@ import aboutRoute from './About'
 
 export default {
   path: '/',
-  component: AppView,
+  component: AppContainer,
   onEnter: scrollToTop,
   getIndexRoute: feedRoute,
   childRoutes: [

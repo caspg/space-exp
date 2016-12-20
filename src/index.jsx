@@ -5,7 +5,7 @@ import { match, Router, browserHistory } from 'react-router'
 import routes from './routes'
 
 const handleCreateElement = (Component, props) => {
-  if (Component.fetchData) {
+  if (Component.name === 'AppContainer') {
     return <Component data={window.BOOT_DATA} {...props} />
   }
 
