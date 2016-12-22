@@ -4,6 +4,8 @@ import { fetchApodDetails } from 'utils/api'
 import ApodDetailsLayout from './ApodDetailsLayout'
 
 class ApodDetailsContainer extends Component {
+  static needBootData() {}
+
   static fetchData(slug) {
     return fetchApodDetails(slug)
   }

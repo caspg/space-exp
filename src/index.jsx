@@ -8,7 +8,7 @@ const shouldAddBootData = ({ name }) =>
   ['AppContainer', 'ApodDetailsContainer'].indexOf(name) > -1
 
 const handleCreateElement = (Component, props) => {
-  if (shouldAddBootData(Component)) {
+  if (Object.hasOwnProperty.call(Component, 'needBootData')) {
     return <Component data={window.BOOT_DATA} {...props} />
   }
 

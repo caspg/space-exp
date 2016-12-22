@@ -3,6 +3,8 @@ import React, { Component, cloneElement, PropTypes } from 'react'
 import AppView from 'components/AppView'
 
 class AppContainer extends Component {
+  static needBootData() {}
+
   constructor(props) {
     super(props)
 
