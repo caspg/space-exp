@@ -6,6 +6,13 @@ module.exports = {
     app: [
       path.resolve(__dirname, '../../src/index.jsx'),
     ],
+    vendor: [
+      'react',
+      'react-dom',
+      'react-headroom',
+      'react-router',
+      'styled-components',
+    ],
   },
   output: {
     path: path.resolve(__dirname, '../../public/bundles'),
@@ -30,6 +37,7 @@ module.exports = {
     },
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
     new webpack.DefinePlugin({
       'process.env': {
         PORT: JSON.stringify(process.env.PORT || 3000),

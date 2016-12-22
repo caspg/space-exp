@@ -39,6 +39,7 @@ module.exports = ({ content, styles, bootData, meta = defaultMeta }) => `
     <script>
      window.BOOT_DATA = ${bootData};
     </script>
+    <script type="text/javascript" src="/bundles/vendor.bundle.js"></script>
     <script type="text/javascript" src="/bundles/app.bundle.js"></script>
   </body>
   </html>
