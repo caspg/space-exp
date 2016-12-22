@@ -6,4 +6,12 @@ const jsxLoader = config.module.loaders.filter(loader =>
 
 jsxLoader.loaders.push('eslint-loader')
 
+if (process.env.ANALYZE) {
+  const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer') // eslint-disable-line
+
+  config.plugins.push(
+    new BundleAnalyzerPlugin(),
+  )
+}
+
 module.exports = config
