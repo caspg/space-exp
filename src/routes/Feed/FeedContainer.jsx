@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 
 import { fetchApods } from 'utils/api'
+import Loader from 'components/Loader'
 import CardsWrapper from './components/CardsWrapper'
 import Card from './components/Card'
 
@@ -57,6 +58,8 @@ class FeedContainer extends Component {
   }
 
   render() {
+    const { isNextPageLoading } = this.state
+
     const cards = this.props.apods.map((apod, i) =>
       <Card key={i} apod={apod} />,
     )
@@ -64,6 +67,7 @@ class FeedContainer extends Component {
     return (
       <CardsWrapper>
         {cards}
+        {isNextPageLoading && <Loader />}
       </CardsWrapper>
     )
   }

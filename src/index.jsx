@@ -4,9 +4,6 @@ import { match, Router, browserHistory } from 'react-router'
 
 import routes from './routes'
 
-const shouldAddBootData = ({ name }) =>
-  ['AppContainer', 'ApodDetailsContainer'].indexOf(name) > -1
-
 const handleCreateElement = (Component, props) => {
   if (Object.hasOwnProperty.call(Component, 'needBootData')) {
     return <Component data={window.BOOT_DATA} {...props} />
