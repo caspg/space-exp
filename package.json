@@ -7,7 +7,7 @@
   "scripts": {
     "start": "HOST=http://spaceexperience.club PORT=4000 nodemon ./server",
     "clean": "rm -rf ./public/bundles/*",
-    "build:webpack": "PORT=4000 NODE_ENV=production webpack -p --config config/webpack/config.prod.js",
+    "build:webpack": "HOST=http://spaceexperience.club PORT=4000 NODE_ENV=production webpack -p --config config/webpack/config.prod.js",
     "build": "yarn run clean && yarn run build:webpack"
   },
   "dependencies": {

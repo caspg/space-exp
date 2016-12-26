@@ -7,8 +7,6 @@ module.exports = {
       script: './server/index.js',
       env: {
         COMMON_VARIABLE: 'true',
-        PORT: '4000',
-        HOST: 'http://spaceexperience.club',
       },
       env_production: {
         NODE_ENV: 'production',
