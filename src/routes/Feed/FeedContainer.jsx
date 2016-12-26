@@ -41,7 +41,6 @@ class FeedContainer extends Component {
     const { isNextPageLoading } = this.state
 
     if (scrolledToBottom && !isNextPageLoading) {
-      this.setState({ isNextPageLoading: true })
       this.handleFetchingData()
     }
   }
@@ -49,12 +48,14 @@ class FeedContainer extends Component {
   handleFetchingData() {
     const { apodsNextDate, onNewApodsData } = this.props
 
-    this.setState({ isNextPageLoading: true })
+    if (apodsNextDate !== '') {
+      this.setState({ isNextPageLoading: true })
 
-    FeedContainer.fetchData(apodsNextDate).then((apodsData) => {
-      this.setState({ isNextPageLoading: false })
-      onNewApodsData(apodsData)
-    })
+      FeedContainer.fetchData(apodsNextDate).then((apodsData) => {
+        this.setState({ isNextPageLoading: false })
+        onNewApodsData(apodsData)
+      })
+    }
   }
 
   render() {
