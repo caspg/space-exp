@@ -1,6 +1,12 @@
 import fetch from 'isomorphic-fetch'
 
-const BASE_URI = `http://localhost:${process.env.PORT}/api`
+const baseUri = () => {
+  if (process.env.NODE_ENV === 'production') {
+    return `http://${process.env.HOST}`
+  }
+
+  return `http://localhost:${process.env.PORT}`
+}
 
 const checkStatus = (response) => {
   if (response.status >= 200 && response.status < 300) {
@@ -18,7 +24,7 @@ const fetchData = url =>
     .then(res => res.json())
 
 export const fetchApods = date =>
-  fetchData(`${BASE_URI}/apods?date=${date}`)
+  fetchData(`${baseUri}/apods?date=${date}`)
 
 export const fetchApodDetails = slug =>
-  fetchData(`${BASE_URI}/apods/${slug}`)
+  fetchData(`${baseUri}/apods/${slug}`)
