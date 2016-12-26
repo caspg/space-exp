@@ -5,7 +5,6 @@ const globalStyle = `
   body {
     padding-bottom: 100px;
 
-    background: url('/cover.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: ${colors.spaceBlue};
 
