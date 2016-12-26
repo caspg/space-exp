@@ -24,8 +24,9 @@ module.exports = ({ content, styles, bootData, meta = defaultMeta }) => `
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet"></noscript>
+
     <style type="text/css">
       ${styles}
     </style>
