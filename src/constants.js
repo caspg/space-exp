@@ -1,3 +1,3 @@
 export default {
-  siteUrl: 'spaceexperience.club',
+  siteUrl: 'https://spaceexperience.club',
 }
