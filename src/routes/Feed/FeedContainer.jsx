@@ -4,6 +4,7 @@ import { fetchApods } from 'utils/api'
 import Loader from 'components/Loader'
 import CardsWrapper from './components/CardsWrapper'
 import Card from './components/Card'
+import LoadMoreLink from './components/LoadMoreLink'
 
 class FeedContainer extends Component {
   static fetchData(date = '') {
@@ -15,6 +16,7 @@ class FeedContainer extends Component {
 
     this.state = {
       isNextPageLoading: false,
+      mounted: false,
     }
 
     this.handleScroll = this.handleScroll.bind(this)
@@ -28,6 +30,8 @@ class FeedContainer extends Component {
     }
 
     window.addEventListener('scroll', this.handleScroll)
+
+    this.setState({ mounted: true }) // eslint-disable-line react/no-did-mount-set-state
   }
 
   componentWillUnmount() {
@@ -59,15 +63,26 @@ class FeedContainer extends Component {
   }
 
   render() {
-    const { isNextPageLoading } = this.state
+    const { isNextPageLoading, mounted } = this.state
+    const { apodsNextDate } = this.props
 
     const cards = this.props.apods.map((apod, i) =>
       <Card key={i} apod={apod} />,
     )
 
+    const loadMoreLink = (
+      <LoadMoreLink
+        href={`/?date=${apodsNextDate}`}
+      >
+        Load more apods
+      </LoadMoreLink>
+    )
+
     return (
       <CardsWrapper>
         {cards}
+
+        {!mounted && loadMoreLink}
         {isNextPageLoading && <Loader />}
       </CardsWrapper>
     )
