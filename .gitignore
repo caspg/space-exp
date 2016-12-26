@@ -9,3 +9,5 @@ tmp/*
 tasks/apod-json/tmp
 
 ngrok
+
+secrets.js
