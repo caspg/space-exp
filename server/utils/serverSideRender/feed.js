@@ -3,8 +3,10 @@ const matchRoute = require('./matchRoute')
 const sendHtmlString = require('./sendHtmlString')
 
 const renderFeed = (req, res) => {
+  const queryDate = req.query.date
+
   matchRoute(req, res, (renderProps) => {
-    FeedContainer.fetchData().then((data) => {
+    FeedContainer.fetchData(queryDate).then((data) => {
       const bootData = {
         apods: data.apods,
         apodsNextDate: data.meta.nextDate,
