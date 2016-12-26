@@ -7,7 +7,7 @@ config.plugins.push(
     'process.env': {
       NODE_ENV: JSON.stringify('production'),
       PORT: JSON.stringify(process.env.PORT),
-      HOST: JSON.stringify('http://spaceexperience.club'),
+      HOST: JSON.stringify(process.env.HOST),
     },
   }),
   new webpack.optimize.UglifyJsPlugin({

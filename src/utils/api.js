@@ -1,12 +1,8 @@
 import fetch from 'isomorphic-fetch'
 
-const baseUri = () => {
-  if (process.env.NODE_ENV === 'production') {
-    return `http://${process.env.HOST}`
-  }
-
-  return `http://localhost:${process.env.PORT}`
-}
+const baseUri = (process.env.NODE_ENV === 'production') ?
+  `http://${process.env.HOST}/api` :
+  `http://localhost:${process.env.PORT}/api`
 
 const checkStatus = (response) => {
   if (response.status >= 200 && response.status < 300) {
