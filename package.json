@@ -5,10 +5,10 @@
   "author": "Kacper Golinski",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon ./server",
+    "start": "PORT=4000 nodemon ./server",
     "clean": "rm -rf ./public/bundles/*",
     "build:webpack": "NODE_ENV=production webpack -p --config config/webpack/config.prod.js",
-    "build": "yarn run clean && yarn run build:webpack"
+    "build": "PORT=4000 yarn run clean && yarn run build:webpack"
   },
   "dependencies": {
     "babel-core": "^6.18.2",

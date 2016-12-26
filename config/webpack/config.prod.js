@@ -6,7 +6,7 @@ config.plugins.push(
   new webpack.DefinePlugin({
     'process.env': {
       NODE_ENV: JSON.stringify('production'),
-      PORT: JSON.stringify(process.env.PORT || 4000),
+      PORT: JSON.stringify(process.env.PORT),
     },
   }),
   new webpack.optimize.UglifyJsPlugin({

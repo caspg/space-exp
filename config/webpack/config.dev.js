@@ -14,7 +14,7 @@ if (process.env.ANALYZE) {
     new BundleAnalyzerPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
-        PORT: JSON.stringify(process.env.PORT || 4000),
+        PORT: JSON.stringify(process.env.PORT),
       },
     }),
   )
