@@ -1,18 +1,10 @@
 require('isomorphic-fetch')
 
+const { APOD_API_KEY } = require('../../secrets.js')
+
 const fetchData = (date) => {
-  const apiKey = process.env.API_KEY
-
-  if (typeof apiKey === 'undefined') {
-    throw new Error(`
-      ------------------------------------------------------------------
-      API key is missing
-      ------------------------------------------------------------------
-    `)
-  }
-
   const baseUri = 'https://api.nasa.gov/planetary/apod'
-  const fullUri = `${baseUri}?api_key=${apiKey}&date=${date}`
+  const fullUri = `${baseUri}?api_key=${APOD_API_KEY}&date=${date}`
 
   return fetch(fullUri).then((res) => {
     if (res.status !== 200) {
