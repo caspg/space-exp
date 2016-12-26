@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const config = require('./config')
 
 const jsxLoader = config.module.loaders.filter(loader =>
@@ -11,6 +12,11 @@ if (process.env.ANALYZE) {
 
   config.plugins.push(
     new BundleAnalyzerPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        PORT: JSON.stringify(process.env.PORT || 4000),
+      },
+    }),
   )
 }
 

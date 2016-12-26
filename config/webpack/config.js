@@ -38,10 +38,5 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
-    new webpack.DefinePlugin({
-      'process.env': {
-        PORT: JSON.stringify(process.env.PORT || 3000),
-      },
-    }),
   ],
 }

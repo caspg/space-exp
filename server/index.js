@@ -7,7 +7,7 @@ const renderApodDetails = require('./utils/serverSideRender/apodDetails')
 const renderAbout = require('./utils/serverSideRender/about')
 const db = require('./db')
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 4000
 
 app.use('/api', apiRouter)
 
