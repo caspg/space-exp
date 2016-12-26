@@ -16,17 +16,18 @@ const Image = styled.img`
   left: 0;
 `
 
-const StyledImage = ({ src, imageRatio, dominantColor }) =>
+const StyledImage = ({ alt, src, imageRatio, dominantColor }) =>
   <ImageWrapper
     style={{
       paddingTop: `${imageRatio}%`,
       backgroundColor: dominantColor,
     }}
   >
-    <Image src={src} />
+    <Image src={src} alt={alt} />
   </ImageWrapper>
 
 StyledImage.propTypes = {
+  alt: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   dominantColor: PropTypes.string.isRequired,
   imageRatio: PropTypes.number.isRequired,

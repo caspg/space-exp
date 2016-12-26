@@ -34,6 +34,7 @@ const Card = ({ apod }) => {
       <CardBody>
         <CardLink to={`/${apod.slug}`}>
           <StyledImage
+            alt={apod.title}
             src={`/thumbs/${apod.slug}.jpg`}
             imageRatio={imageRatio}
             dominantColor={dominantColor}

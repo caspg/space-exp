@@ -46,6 +46,7 @@ const CardFull = ({ slug, apod }) => {
       <CardBody style={{ width: '100%', maxWidth: imageSize.width }}>
         <ImageLink href={apod.hdurl} target="_blank">
           <StyledImage
+            alt={apod.title}
             src={httpsUrl}
             imageRatio={imageRatio}
             dominantColor={dominantColor}
