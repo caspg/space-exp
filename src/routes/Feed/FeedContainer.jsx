@@ -48,7 +48,7 @@ class FeedContainer extends Component {
   handleFetchingData() {
     const { apodsNextDate, onNewApodsData } = this.props
 
-    if (apodsNextDate !== '') {
+    if (apodsNextDate) {
       this.setState({ isNextPageLoading: true })
 
       FeedContainer.fetchData(apodsNextDate).then((apodsData) => {
