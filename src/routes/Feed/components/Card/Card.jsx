@@ -32,7 +32,7 @@ const Card = ({ apod }) => {
   return (
     <CardWrapper>
       <CardBody>
-        <CardLink to={`/${apod.slug}`}>
+        <CardLink to={`/${apod.slug}`} title={apod.title}>
           <StyledImage
             alt={apod.title}
             src={`/thumbs/${apod.slug}.jpg`}
