@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-fetch'
 
 const baseUri = (process.env.NODE_ENV === 'production') ?
-  `http://${process.env.HOST}/api` :
+  `${process.env.HOST}/api` :
   `http://localhost:${process.env.PORT}/api`
 
 const checkStatus = (response) => {
