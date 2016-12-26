@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon ./server",
-    "build": "NODE_ENV=production webpack -p --config config/webpack/config.prod.js"
+    "clean": "rm -rf ./public/bundles/*",
+    "build:webpack": "NODE_ENV=production webpack -p --config config/webpack/config.prod.js",
+    "build": "yarn run clean && yarn run build:webpack"
   },
   "dependencies": {
     "babel-core": "^6.18.2",
