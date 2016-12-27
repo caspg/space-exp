@@ -18,7 +18,7 @@ module.exports = {
       user,
       host: '144.217.161.18',
       ref: 'origin/master',
-      repo: 'ssh://git@bitbucket.org/caspg/space-exp-mvp.git',
+      repo: 'git@github.com:caspg/space-exp.git',
       path: `/home/${user}/applications/space-exp`,
       'post-deploy': 'yarn install && yarn run build && pm2 startOrRestart ecosystem.config.js --env production',
     },
