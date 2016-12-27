@@ -90,8 +90,6 @@ const AboutLayout = () =>
       <Acknowledgement>
         <Paragraph>
           Logo made by <Anchor href="http://www.freepik.com">Freepik</Anchor> from <Anchor href="http://www.flaticon.com">flaticon.com</Anchor>
-          <br />
-          Background image by <Anchor href="https://unsplash.com/@sveninho">unsplash.com/@sveninho</Anchor>
         </Paragraph>
       </Acknowledgement>
     </AboutBody>
