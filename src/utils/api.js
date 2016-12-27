@@ -19,8 +19,8 @@ const fetchData = url =>
     .then(checkStatus)
     .then(res => res.json())
 
-export const fetchApods = date =>
-  fetchData(`${baseUri}/apods?date=${date}`)
+export const fetchApods = (date, perPage) =>
+  fetchData(`${baseUri}/apods?date=${date}&perPage=${perPage}`)
 
 export const fetchApodDetails = slug =>
   fetchData(`${baseUri}/apods/${slug}`)

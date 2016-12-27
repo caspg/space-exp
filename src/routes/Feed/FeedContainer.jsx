@@ -7,8 +7,8 @@ import Card from './components/Card'
 import LoadMoreLink from './components/LoadMoreLink'
 
 class FeedContainer extends Component {
-  static fetchData(date = '') {
-    return fetchApods(date)
+  static fetchData(date = '', perPage = '') {
+    return fetchApods(date, perPage)
   }
 
   constructor(props) {
@@ -75,11 +75,13 @@ class FeedContainer extends Component {
       </LoadMoreLink>
     )
 
+    const shouldRenderLink = !mounted && !!apodsNextDate
+
     return (
       <CardsWrapper>
         {cards}
 
-        {!mounted && loadMoreLink}
+        {shouldRenderLink && loadMoreLink}
         {isNextPageLoading && <Loader />}
       </CardsWrapper>
     )
