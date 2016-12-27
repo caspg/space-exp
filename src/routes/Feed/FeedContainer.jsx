@@ -23,15 +23,9 @@ class FeedContainer extends Component {
   }
 
   componentDidMount() {
-    const { apods } = this.props
-
-    if (!apods || apods.length === 0) {
-      this.handleFetchingData()
-    }
-
-    window.addEventListener('scroll', this.handleScroll)
-
     this.setState({ mounted: true }) // eslint-disable-line react/no-did-mount-set-state
+    this.handleFetchingData()
+    window.addEventListener('scroll', this.handleScroll)
   }
 
   componentWillUnmount() {
@@ -50,9 +44,9 @@ class FeedContainer extends Component {
   }
 
   handleFetchingData() {
-    const { apodsNextDate, onNewApodsData } = this.props
+    const { apodsNextDate, onNewApodsData, apods } = this.props
 
-    if (apodsNextDate) {
+    if (apodsNextDate || !apods || apods.length === 0) {
       this.setState({ isNextPageLoading: true })
 
       FeedContainer.fetchData(apodsNextDate).then((apodsData) => {
