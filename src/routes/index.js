@@ -7,7 +7,7 @@ import aboutRoute from './About'
 export default {
   path: '/',
   component: AppContainer,
-  getIndexRoute: feedRoute,
+  indexRoute: feedRoute,
   childRoutes: [
     aboutRoute,
 
