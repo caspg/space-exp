@@ -24,8 +24,12 @@ class FeedContainer extends Component {
 
   componentDidMount() {
     this.setState({ mounted: true }) // eslint-disable-line react/no-did-mount-set-state
-    this.handleFetchingData()
     window.addEventListener('scroll', this.handleScroll)
+
+    const { apods } = this.props
+    if (!apods || apods.length === 0) {
+      this.handleFetchingData()
+    }
   }
 
   componentWillUnmount() {
@@ -37,23 +41,22 @@ class FeedContainer extends Component {
     const currentPosition = window.innerHeight + window.scrollY + bottomOffset
     const scrolledToBottom = currentPosition >= document.body.offsetHeight
     const { isNextPageLoading } = this.state
+    const { apodsNextDate } = this.props
 
-    if (scrolledToBottom && !isNextPageLoading) {
+    if (scrolledToBottom && !isNextPageLoading && apodsNextDate) {
       this.handleFetchingData()
     }
   }
 
   handleFetchingData() {
-    const { apodsNextDate, onNewApodsData, apods } = this.props
+    const { apodsNextDate, onNewApodsData } = this.props
 
-    if (apodsNextDate || !apods || apods.length === 0) {
-      this.setState({ isNextPageLoading: true })
+    this.setState({ isNextPageLoading: true })
 
-      FeedContainer.fetchData(apodsNextDate).then((apodsData) => {
-        this.setState({ isNextPageLoading: false })
-        onNewApodsData(apodsData)
-      })
-    }
+    FeedContainer.fetchData(apodsNextDate).then((apodsData) => {
+      this.setState({ isNextPageLoading: false })
+      onNewApodsData(apodsData)
+    })
   }
 
   render() {
