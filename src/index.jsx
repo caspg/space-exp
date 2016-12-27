@@ -14,7 +14,11 @@ const handleCreateElement = (Component, props) => {
 
 match({ routes, history: browserHistory }, (error, redirectLocation, renderProps) => {
   render(
-    <Router {...renderProps} createElement={handleCreateElement} />,
+    <Router
+      {...renderProps}
+      onUpdate={() => { window.scrollTo(0, 0) }}
+      createElement={handleCreateElement}
+    />,
     document.getElementById('app'),
   )
 });
