@@ -5,12 +5,13 @@ const buildApod = require('./modules/buildApod')
 const saveApod = require('./modules/saveApod')
 
 const apodsCountToFetch = Number(process.argv[2]) || 4
+const startDate = process.argv[3]
 
 db.initialize()
 
 const fetchAndSaveApod = i =>
   new Promise((resolve) => {
-    const date = moment().subtract(i, 'days').format('YYYY-MM-DD')
+    const date = moment(startDate).subtract(i, 'days').format('YYYY-MM-DD')
 
     setTimeout(() => {
       buildApod(date)
