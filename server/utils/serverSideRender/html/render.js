@@ -9,6 +9,7 @@ const googleAnalytics = `
 
   ga('create', 'UA-89508214-1', 'auto');
   ga('send', 'pageview');
+  window.ga = ga
 
   </script>
 `

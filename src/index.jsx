@@ -4,6 +4,12 @@ import { match, Router, browserHistory } from 'react-router'
 
 import routes from './routes'
 
+if (process.env.NODE_ENV === 'production') {
+  browserHistory.listen((location) => {
+    window.ga('send', 'pageview', location.pathname)
+  })
+}
+
 const handleCreateElement = (Component, props) => {
   if (Object.hasOwnProperty.call(Component, 'needBootData')) {
     return <Component data={window.BOOT_DATA} {...props} />
