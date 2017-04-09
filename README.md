@@ -12,3 +12,8 @@
 * node v7.2.0
 * yarn v0.18.0
 * imagemagick, graphicsmagick
+* [pm2](https://github.com/Unitech/pm2)
+
+## deployment
+
+`pm2 deploy ecosystem.config.js production`
