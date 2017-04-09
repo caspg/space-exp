@@ -39,7 +39,7 @@ const CardFull = ({ slug, apod }) => {
   const { imageSize, dominantColor, url, title } = apod
   const imageRatio = (imageSize.height / imageSize.width) * 100
 
-  const httpsUrl = url.replace(/^(http)/, 'https')
+  const httpsUrl = url.replace(/^(https?)/, 'https')
 
   return (
     <CardWrapper>
